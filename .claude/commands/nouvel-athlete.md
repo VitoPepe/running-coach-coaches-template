@@ -1,4 +1,4 @@
 ---
-description: Crée le dossier d'un nouvel athlète à partir du template
+description: Crée et remplit la fiche d'un athlète avec le coach
 ---
-Exécute le workflow `workflows/onboarding-athlete.md` pour : $ARGUMENTS
+Suis `conversations/fiche-athlete.md` pour : $ARGUMENTS

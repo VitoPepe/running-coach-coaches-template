@@ -1,5 +1,8 @@
 # Indicateurs de progression
 
+> **À quoi sert ce fichier :** les indicateurs à croiser pour savoir si un athlète progresse d'une saison à l'autre.
+> **Mis à jour par :** contenu du projet, ajustable par le coach.
+
 **Question** : un athlète progresse-t-il d'une saison à l'autre, en trail comme sur route ?
 
 **Principe** : les courses seules ne suffisent pas. Il y en a peu par an, les parcours changent,

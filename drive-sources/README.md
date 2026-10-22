@@ -1,5 +1,8 @@
 # Sources Google Drive
 
+> **À quoi sert ce fichier :** comment synchroniser des documents Google Drive dans le repo (niveau expert).
+> **Mis à jour par :** contenu du projet ; les fichiers synchronisés sont écrits par la GitHub Action.
+
 Contenu **synchronisé automatiquement** depuis Google Drive. Ne pas l'éditer à la main : toute
 modification serait écrasée à la prochaine synchro. Pour corriger un contenu, le modifier dans Drive.
 

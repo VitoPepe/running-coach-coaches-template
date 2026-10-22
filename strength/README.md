@@ -1,5 +1,8 @@
 # Renforcement
 
+> **À quoi sert ce fichier :** comment sont rangées tes séances de renforcement.
+> **Mis à jour par :** le coach.
+
 Un dossier par sport + `general/` (gainage, mobilité, proprioception, prévention communes).
 Chaque séance = un fichier créé depuis `_template-seance.md`, nommé `<objectif>-<duree>.md`
 (ex. `running/prevention-achille-20min.md`).
