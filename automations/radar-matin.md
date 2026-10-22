@@ -28,7 +28,7 @@ Dans Nolio, pour chacun :
 
 Applique `coach/criteres-alertes.md` pour classer chaque athlète en 🔴, 🟠, 🟢 ou RAS. Repère aussi :
 - ⭐ **séance clé** aujourd'hui ou demain : intensité haute, sortie longue, test, ou séance marquée clé par le coach ;
-- 🏁 **course** dans les 7 jours ;
+- 🏁 **course** dans les 14 jours (préparation de course) ;
 - 🆕 **nouvel athlète** : présent dans Nolio mais absent de `athletes/index.md`.
 
 ## 2. Détail (seulement pour 🔴, 🟠 et ⭐)
@@ -63,7 +63,7 @@ Le lundi, rappelle aussi les fiches encore à compléter (`etat.md`).
 - …
 ⭐ Séances clés à vérifier
 - <Prénom> — <aujourd'hui/demain> : <séance> — <point à vérifier>
-🏁 Courses dans les 7 jours
+🏁 Préparation de course
 - <Prénom> — <course> — J-<x> — <point de préparation du jour>
 🟢 À valoriser
 - …

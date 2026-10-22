@@ -75,3 +75,14 @@ Les critères d'alerte du coach sont des valeurs par défaut. Chaque profil peut
 - [ ] Faire relire `docs/consentement-rgpd.md` par quelqu'un de compétent avant un usage professionnel.
 - [ ] Mesurer les chiffres des articles : temps d'arrivée par athlète, faux positifs du radar, consommation.
 - [ ] Rédiger les deux articles à partir de `docs/article-medium-facile.md` et `docs/article-medium-complet.md`.
+
+### ✅ L'exemple fictif sert aussi de test
+
+Construire le coach fictif à partir des vrais prompts a révélé quatre incohérences :
+- le radar express classait toute « gêne » en 🔴 ;
+- le radar complet n'avait pas de rubrique pour une course à J-14 ;
+- l'arrivée lisait Nolio avant d'avoir demandé le consentement ;
+- la revue du soir ne prévoyait pas de brouillon pour un écart.
+
+Les quatre sont corrigées.
+**Pourquoi c'est utile :** un exemple écrit « à la main » aurait masqué ces trous. Un exemple produit en suivant les prompts les met en évidence.

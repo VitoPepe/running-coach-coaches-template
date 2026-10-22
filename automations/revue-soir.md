@@ -52,6 +52,7 @@ Pour les séances clés de demain : applique `automations/modules/seance-cle.md`
   💬 Brouillon : « … »
 ⚠️ Écarts
 - <Prénom> — <séance> : <statut> — <explication> → <niveau, action>
+  💬 Brouillon : « … » (écart notable seulement)
 ✅ Conformes : <prénoms>
 📅 Demain à surveiller : <Prénom> — <séance clé> — <point>
 🔧 Pour m'améliorer : <une question>

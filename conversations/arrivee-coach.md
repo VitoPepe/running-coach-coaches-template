@@ -26,7 +26,7 @@ Prénom, structure (indépendant, club, team), disciplines, formations, depuis q
 
 ## Bloc 2 — Ta philosophie générale (15 min)
 
-Avant de poser les questions, **observe Nolio** sur 8 semaines et 3 ou 4 athlètes actifs : répartition de l'intensité, séances types, cycles de charge. Propose ce que tu vois : « Tes plans ressemblent à du polarisé : 80 % facile, 2 séances dures par semaine, une semaine allégée toutes les 4. C'est ta méthode ? ». Le coach confirme ou corrige. Si une approche de `bibliotheque/` s'en rapproche, dis-le en une phrase.
+Avant de poser les questions, **observe Nolio** sur 8 semaines et 3 ou 4 athlètes actifs, en ne lisant que **les séances prévues, écrites par le coach** : répartition de l'intensité, séances types, cycles de charge. Pas de séances réalisées, de commentaires ni de métriques : le consentement des athlètes n'est demandé qu'au bloc 4. Propose ce que tu vois : « Tes plans ressemblent à du polarisé : 80 % facile, 2 séances dures par semaine, une semaine allégée toutes les 4. C'est ta méthode ? ». Le coach confirme ou corrige. Si une approche de `bibliotheque/` s'en rapproche, dis-le en une phrase.
 
 Puis, une question à la fois :
 1. **Principes** : tes 3 convictions de fond, ce que tu refuses, tes priorités en cas de conflit (santé, régularité, performance).
