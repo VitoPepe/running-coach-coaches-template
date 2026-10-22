@@ -1,7 +1,8 @@
 # Critères d'alerte
 
-> Valeurs par défaut **à ajuster** selon ma philosophie. Un critère peut être surchargé par athlète
-> dans la section « Points de vigilance » de son `profil.md`.
+> **À quoi sert ce fichier :** les seuils qui classent une séance en 🔴, 🟠 ou 🟢 dans le radar et la revue du soir.
+> **Mis à jour par :** la conversation d'arrivée (bloc 3), puis le coach. Surchargeables athlète par athlète dans « Points de vigilance » de son profil.
+
 
 ## 🔴 Alerte — à traiter aujourd'hui
 | Critère | Règle par défaut |

@@ -3,7 +3,7 @@
 **But** : en 2 minutes de lecture, savoir quels athlètes nécessitent mon attention aujourd'hui.
 
 ## Entrées
-- Période : les dernières 24 h (ou depuis le dernier rapport dans `reports/daily/`, max 72 h)
+- Période : les dernières 24 h (ou depuis le dernier rapport dans `bilans/quotidien/`, max 72 h)
 - Athlètes : tous les dossiers `athletes/*/` avec `statut: actif`
 
 ## Étapes
@@ -13,13 +13,13 @@
    - métriques clés (durée, distance, FC, allure/puissance, RPE)
    - **commentaires de l'athlète** (toujours les lire)
 3. Rapprocher planifié ↔ réalisé.
-4. Appliquer `workflows/criteres-alertes.md`, en tenant compte de `profil.md` (points de vigilance,
+4. Appliquer `coach/criteres-alertes.md`, en tenant compte de `profil.md` (points de vigilance,
    phase) et `sante.md`.
 5. Pour chaque alerte 🔴, proposer une action concrète (message, adaptation du plan, protocole
    `injuries/` à ouvrir) en citant le fichier source.
 6. Écrire le rapport et ajouter une ligne dans `athletes/<slug>/journal.md` pour chaque 🔴.
 
-## Sortie : `reports/daily/AAAA-MM-JJ.md`
+## Sortie : `bilans/quotidien/AAAA-MM-JJ.md`
 ```markdown
 # Check quotidien — AAAA-MM-JJ
 Période analysée : … → …  ·  Athlètes : N actifs, N avec séance

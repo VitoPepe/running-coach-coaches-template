@@ -7,6 +7,9 @@ derniere_revue: AAAA-MM-JJ
 
 # Nom de la pathologie
 
+> **À quoi sert ce fichier :** le modèle d'un protocole de pathologie. Copie-le en `injuries/<pathologie>.md`.
+> **Mis à jour par :** le coach, idéalement validé avec un kiné ou un médecin.
+
 ## Signes d'alerte côté coach
 Mots-clés à repérer dans les commentaires Nolio : (ex. « talon », « raideur le matin »…)
 

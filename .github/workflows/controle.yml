@@ -1,0 +1,28 @@
+# Contrôle du coach : chaque nuit, vérifie que les tâches planifiées ont tourné et que les liens du repo sont bons.
+# Si un problème est trouvé, le workflow échoue et GitHub t'envoie un mail. Rien à configurer.
+name: Contrôle du coach
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # tous les jours à 04:17 UTC (avant le brief du matin)
+  workflow_dispatch: # bouton « Run workflow » dans l'onglet Actions
+
+permissions:
+  contents: read
+
+jobs:
+  controle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Contrôle (tâches en retard ou en échec, état, liens)
+        run: |
+          if python3 scripts/controle.py > rapport.txt; then
+            echo "✅ Ton coach tourne bien" >> "$GITHUB_STEP_SUMMARY"
+          else
+            { echo "### ⚠️ À regarder"; cat rapport.txt; } >> "$GITHUB_STEP_SUMMARY"
+            cat rapport.txt
+            exit 1
+          fi

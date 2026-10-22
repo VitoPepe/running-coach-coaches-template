@@ -1,17 +1,22 @@
 # Bilan de progression
 
+> **À quoi sert ce fichier :** dire si un athlète progresse d'une saison à l'autre, en croisant ses courses et son entraînement. À la demande, ou en fin de saison.
+> **Mis à jour par :** contenu du projet.
+
+**Comment le lancer** : « Fais le bilan de progression de Julie », ou `/bilan-progression <athlète>`.
+
 **But** : dire si un athlète progresse d'une saison à l'autre, en croisant ses courses et son
 entraînement. Méthode et indicateurs : `assessments/progress-indicators.md`.
 
 **Entrées** : un athlète (`athletes/<slug>/`) et des saisons (par défaut : toutes les années
 civiles depuis le début du récap courses).
 
-**Sortie** : `reports/progress/<slug>-AAAA-MM-JJ.md`. S'il existe déjà un rapport du jour ou
+**Sortie** : `bilans/progression/<slug>-AAAA-MM-JJ.md`. S'il existe déjà un rapport du jour ou
 un rapport « partie 1 » récent, on le **complète** au lieu d'en créer un nouveau.
 
 ## Partie 1 — Courses (récap courses)
 
-Source : `drive-sources/athletes/<slug>/races/course.csv`.
+Source : `drive-sources/athletes/<slug>/races/course.csv` si le coach synchronise un récap de courses (niveau expert). Sinon, les compétitions dans Nolio, et les records du profil.
 1. Paires de courses comparables (même course ou même profil : distance ±15 %, D+ ±20 %,
    technicité ±1) : temps, VAP, FC moyenne/max, RPE, exécution, efficacité (m/min ÷ FC moy).
 2. Équivalent 10k (Riegel, exposant 1,06) pour les courses route.

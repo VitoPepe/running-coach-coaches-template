@@ -10,6 +10,9 @@ pathologies_liees: []  # fichiers de injuries/ pour lesquels cette séance est u
 
 # Titre de la séance
 
+> **À quoi sert ce fichier :** le modèle d'une séance de renforcement. Copie-le en `strength/<sport>/<objectif>-<duree>.md`.
+> **Mis à jour par :** le coach.
+
 ## Échauffement
 
 ## Bloc principal

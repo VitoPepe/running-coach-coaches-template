@@ -1,5 +1,8 @@
 # Santé — Prénom Nom
 
+> **À quoi sert ce fichier :** la santé de l'athlète : faits, dates, avis des professionnels. Pas de diagnostic.
+> **Mis à jour par :** la fiche athlète et le coach ; l'agent seulement après accord du coach.
+
 > Données sensibles. Pas de diagnostic ici : faits, dates, avis des professionnels.
 
 ## Antécédents

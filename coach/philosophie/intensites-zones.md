@@ -1,5 +1,8 @@
 # Intensités & zones
 
+> **À quoi sert ce fichier :** ton modèle de zones, la répartition cible, ton vocabulaire de séance.
+> **Mis à jour par :** la conversation d'arrivée (bloc 2), puis le coach.
+
 ## Modèle utilisé
 (ex. 3 zones / 5 zones / 7 zones — référence : seuil, VMA, FTP…)
 
