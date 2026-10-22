@@ -3,6 +3,8 @@
 > **À quoi sert ce fichier :** décrire l'approche « polarisée » (80/20) : beaucoup de facile, un peu de dur, peu de « moyen ».
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
+> 📎 Page de référence reprise du projet `running-coach-athletes`, écrite pour un coureur : ici, elle sert au coach et à l'assistant comme bibliothèque, jamais à la place de la philosophie du coach.
+
 ## En une phrase
 
 Environ 80 % de ton temps de course se fait vraiment facile, les 20 % restants sont durs, et tu évites de passer tes footings dans la zone « ni facile ni dure » où l'on se fatigue sans s'en rendre compte.
@@ -60,14 +62,12 @@ Environ 80 % de ton temps de course se fait vraiment facile, les 20 % restants s
 - Stagnation sur 6 à 8 semaines malgré la régularité : il manque peut-être du volume ou un peu de travail au seuil.
 - Une petite douleur qui revient toujours au même endroit.
 
-## Comment le coach l'applique
+## Comment l'assistant s'en sert ici
 
-- **Ce qu'il lit dans Nolio** : les séances réalisées (durée, FC, allure, D+), le RPE et tes commentaires. Il utilise **tes zones enregistrées dans Nolio** en priorité, pas des pourcentages génériques.
-- **Ce qu'il calcule** : la part de temps en zone 1 et en zones 2 + 3, sur 7 et sur 28 jours, et la FC moyenne de tes footings par rapport au haut de ta zone 1.
-- **Ce qu'il signale** : un footing trop rapide (« tu étais en zone 2 pendant 25 min sur 45 »), une semaine sous 70 % de facile, deux séances dures trop rapprochées.
-- **Quand il construit ou adapte une semaine** : 2 séances clés au plus, séparées par au moins un jour facile ; sortie longue facile ; semaine allégée toutes les 3 à 4 semaines. Un feu orange ou rouge du matin transforme la séance dure en facile ou en repos.
-- **Mode `avec-coach`** : il explique la séance prévue par ton coach (dans quelle zone, pourquoi) et la débriefe. Si la répartition dérive, il te suggère une question à poser à ton coach. Il ne propose pas de séance et n'écrit rien dans Nolio.
-- **Mode `autocoache`** : il propose la semaine (`conversations/planifier.md`), te montre un récap, et ne crée les séances dans Nolio qu'après ta validation explicite.
+- **Ce n'est pas la philosophie du coach.** L'assistant applique d'abord `athletes/<slug>/philosophie.md`, puis `coach/philosophie/`.
+- **Pendant l'arrivée** (`conversations/arrivee-coach.md`), si les plans observés dans Nolio ressemblent à cette approche, il le dit en une phrase pour aider le coach à formuler sa propre méthode.
+- **En alternative** : quand le coach demande « et si on faisait autrement ? », l'assistant peut s'appuyer sur cette page, en la présentant à part et marquée « hors philosophie du coach », avec ses sources.
+- **Signaux d'alerte** : les signaux listés plus haut peuvent nourrir les seuils de `coach/criteres-alertes.md`, si le coach le valide.
 
 ## Sources
 

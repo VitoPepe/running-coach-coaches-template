@@ -3,6 +3,8 @@
 > **À quoi sert ce fichier :** décrire l'approche « trail » : préparer ton corps au terrain de ta course, la montée, la descente, la durée et l'alimentation en courant.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
+> 📎 Page de référence reprise du projet `running-coach-athletes`, écrite pour un coureur : ici, elle sert au coach et à l'assistant comme bibliothèque, jamais à la place de la philosophie du coach.
+
 ## En une phrase
 
 Tu t'entraînes pour le terrain de ta course : monter (souvent en marchant vite), descendre sans détruire tes cuisses, durer longtemps, et manger en courant.
@@ -56,14 +58,12 @@ Tu t'entraînes pour le terrain de ta course : monter (souvent en marchant vite)
 - Un D+ hebdomadaire qui bondit de plus de 30 % d'une semaine à l'autre.
 - Moins d'envie : les sorties longues deviennent redoutées.
 
-## Comment le coach l'applique
+## Comment l'assistant s'en sert ici
 
-- **Ce qu'il lit dans Nolio** : pour chaque sortie, la durée, la distance, le D+ et le D-, la FC en montée, ton RPE et tes commentaires. Il additionne le D+ de la semaine et le compare au profil de ta course (fiche dans `courses/`).
-- **Comment il construit** : il fait progresser le D+ et la descente par paliers, avec une semaine allégée toutes les 3 à 4 semaines. Dans les 8 à 12 dernières semaines, il rapproche les sorties longues du terrain de la course et prévoit des tests de ravitaillement.
-- **Comment il décrit les séances** : en durée et en effort (FC, RPE), pas en allure.
-- **Ce qu'il note** : dans le débrief, ce que tu as mangé et bu en sortie longue, et ce qui est bien ou mal passé, pour préparer ton plan de course.
-- **Mode `avec-coach`** : il explique les séances prévues par ton coach (pourquoi cette côte, pourquoi ce terrain), prépare ton plan de ravitaillement et débriefe. Il ne propose pas de séance et n'écrit rien dans Nolio ; il te suggère au besoin une question à poser à ton coach.
-- **Mode `autocoache`** : il propose la semaine (`conversations/planifier.md`), te montre un récap, et ne crée les séances dans Nolio qu'après ta validation explicite.
+- **Ce n'est pas la philosophie du coach.** L'assistant applique d'abord `athletes/<slug>/philosophie.md`, puis `coach/philosophie/`.
+- **Pendant l'arrivée** (`conversations/arrivee-coach.md`), si les plans observés dans Nolio ressemblent à cette approche, il le dit en une phrase pour aider le coach à formuler sa propre méthode.
+- **En alternative** : quand le coach demande « et si on faisait autrement ? », l'assistant peut s'appuyer sur cette page, en la présentant à part et marquée « hors philosophie du coach », avec ses sources.
+- **Signaux d'alerte** : les signaux listés plus haut peuvent nourrir les seuils de `coach/criteres-alertes.md`, si le coach le valide.
 
 ## Sources
 

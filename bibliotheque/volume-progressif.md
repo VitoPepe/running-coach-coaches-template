@@ -3,6 +3,8 @@
 > **À quoi sert ce fichier :** décrire l'approche qui construit d'abord une large base d'endurance, en augmentant la charge par petites marches.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
+> 📎 Page de référence reprise du projet `running-coach-athletes`, écrite pour un coureur : ici, elle sert au coach et à l'assistant comme bibliothèque, jamais à la place de la philosophie du coach.
+
 ## En une phrase
 
 Tu construis d'abord un gros socle d'endurance facile, tu augmentes la charge par petites marches, et tu t'accordes régulièrement une semaine plus légère pour que ton corps encaisse le travail.
@@ -57,13 +59,12 @@ Exemple de bloc sur 4 semaines (volume total) : 30 km → 33 km → 36 km → 26
 - Sommeil dégradé, irritabilité, moins d'envie de courir.
 - Un saut de plus de 30 % d'une semaine sur l'autre, hors retour au volume habituel après une semaine allégée.
 
-## Comment le coach l'applique
+## Comment l'assistant s'en sert ici
 
-- **Ce qu'il lit dans Nolio** : par semaine, le volume (km et durée), le D+, la durée de la sortie longue, et les séances faites par rapport aux séances prévues, sur 4 à 8 semaines.
-- **Ce qu'il calcule** : la hausse de la semaine par rapport à la moyenne des 4 précédentes. Au-delà d'environ 10 à 15 %, il le signale ; au-delà de 30 %, il propose de lisser. Si Nolio affiche une charge ou une fatigue, il la lit telle quelle, sans la recalculer, comme un indice de plus.
-- **Comment il construit** : des blocs de 3 à 4 semaines, la dernière allégée ; une seule variable qui augmente à la fois ; la sortie longue qui grandit doucement. Une semaine ratée ne se « rattrape » pas : on reprend là où on en est.
-- **Mode `avec-coach`** : il explique la logique du bloc prévu par ton coach, te montre l'évolution de ton volume et, si une hausse lui semble brusque, te suggère une question à poser à ton coach. Il ne propose pas de séance et n'écrit rien dans Nolio.
-- **Mode `autocoache`** : il propose la semaine ou le bloc (`conversations/planifier.md`), te montre un récap, et ne crée les séances dans Nolio qu'après ta validation explicite.
+- **Ce n'est pas la philosophie du coach.** L'assistant applique d'abord `athletes/<slug>/philosophie.md`, puis `coach/philosophie/`.
+- **Pendant l'arrivée** (`conversations/arrivee-coach.md`), si les plans observés dans Nolio ressemblent à cette approche, il le dit en une phrase pour aider le coach à formuler sa propre méthode.
+- **En alternative** : quand le coach demande « et si on faisait autrement ? », l'assistant peut s'appuyer sur cette page, en la présentant à part et marquée « hors philosophie du coach », avec ses sources.
+- **Signaux d'alerte** : les signaux listés plus haut peuvent nourrir les seuils de `coach/criteres-alertes.md`, si le coach le valide.
 
 ## Sources
 

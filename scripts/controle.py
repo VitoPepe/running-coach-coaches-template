@@ -4,7 +4,7 @@
 Vérifie :
 - automations/runs.md : chaque tâche déjà lancée au moins une fois a tourné récemment,
   et sa dernière exécution (depuis hier) n'est ni partielle ni en échec ;
-- etat.md : mis à jour il y a 3 jours au plus, dès que le débrief du soir a déjà tourné ;
+- etat.md : mis à jour il y a 3 jours au plus, dès que le radar du matin a déjà tourné ;
 - les chemins de fichiers du repo cités entre backticks ou en lien Markdown existent.
 
 Sortie : la liste des problèmes (code 1 s'il y en a), rien sinon.
@@ -17,7 +17,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TODAY = datetime.date.today()
-MAX_AGE = {"brief": 1, "debrief": 1, "bilan-hebdo": 8, "bilan-mensuel": 32}
+MAX_AGE = {"radar": 1, "revue": 1, "bilan-hebdo": 8, "bilan-mensuel": 32}
 problems = []
 
 
@@ -47,8 +47,8 @@ def runs():
 
 
 def etat(latest):
-    if "debrief" not in latest:
-        return  # le débrief n'a jamais tourné : rien à vérifier
+    if "radar" not in latest:
+        return  # le radar n'a jamais tourné : rien à vérifier
     text = (ROOT / "etat.md").read_text(encoding="utf-8")
     m = re.search(r"Dernière mise à jour : (\d{4}-\d{2}-\d{2})", text)
     if not m:
@@ -63,7 +63,7 @@ def broken_paths():
     pattern = re.compile(r"`([\w./-]+\.(?:md|py|yml))`|\]\(([\w./-]+\.(?:md|py|yml))(?:#[^)]*)?\)")
     for md in ROOT.rglob("*.md"):
         rel = md.relative_to(ROOT)
-        if rel.parts[0] in {".git", "journal", "bilans"}:
+        if rel.parts[0] in {".git", "bilans", "drive-sources"} or rel.name == "journal.md":
             continue
         for a, b in pattern.findall(md.read_text(encoding="utf-8")):
             target = a or b

@@ -1,4 +1,4 @@
 ---
-description: Bilan hebdomadaire d'un athlète ou de tous les athlètes actifs
+description: Bilan hebdomadaire d'un athlète ou de tous les athlètes suivis
 ---
-Exécute le workflow `workflows/bilan-hebdo.md`. Athlète(s) : $ARGUMENTS (tous les actifs si vide).
+Exécute le prompt de `automations/bilan-hebdo.md` (tout ce qui suit la ligne ---). Athlète(s) : $ARGUMENTS (tous les athlètes suivis si vide).

@@ -3,6 +3,8 @@
 > **À quoi sert ce fichier :** décrire comment reprendre la course pas à pas après une blessure, une fois qu'un professionnel de santé t'y a autorisé, et quand s'arrêter.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
+> 📎 Page de référence reprise du projet `running-coach-athletes`, écrite pour un coureur : ici, elle sert au coach et à l'assistant comme bibliothèque, jamais à la place de la philosophie du coach.
+
 ## En une phrase
 
 Une fois que tu as le feu vert d'un professionnel de santé, tu reprends par petites étapes, et ce sont tes sensations (douleur pendant et le lendemain) qui décident du rythme, pas le calendrier.
@@ -49,7 +51,7 @@ Les grandes étapes, dans l'ordre : marche rapide sans douleur → marche-course
 - **Fracture de fatigue, chirurgie, blessure osseuse** : seul le protocole de ton médecin compte, souvent plus long et avec des critères précis.
 - **Fractures de fatigue à répétition, fatigue qui ne passe pas, perte de poids rapide ou (pour une athlète) perte des règles** : parles-en à un médecin. Ce n'est pas qu'une question de charge.
 - **Une douleur qui change de place** ou apparaît ailleurs (on compense) : signale-la à ton professionnel de santé.
-- **Mode `avec-coach`** : ton coach humain et ton professionnel de santé décident ensemble du rythme.
+- **Le rythme** se décide entre le coach, l'athlète et le professionnel de santé.
 
 ## Signaux d'alerte
 
@@ -70,14 +72,12 @@ Les grandes étapes, dans l'ordre : marche rapide sans douleur → marche-course
 
 > 🔴 **Stoppe la course à pied et consulte** (médecin, médecin du sport ou kiné) avant de reprendre. On adaptera le plan ensuite, ce n'est pas une course contre la montre.
 
-## Comment le coach l'applique
+## Comment l'assistant s'en sert ici
 
-- **Ce qu'il lit** : `profil/sante.md` (zones à surveiller), `etat.md` (alerte en cours) et la consigne de ton professionnel de santé si tu l'as notée. Dans Nolio : la durée, l'allure, la FC de chaque séance, ton RPE et tes commentaires.
-- **Ce qu'il te demande** après chaque séance : la douleur pendant (de 0 à 10), puis le lendemain matin, et la raideur au réveil.
-- **Comment il décide** : il ne propose l'étape suivante qu'après 2 à 3 séances qui respectent la règle de la douleur ; sinon il maintient ou revient en arrière. Il ne pose aucun diagnostic et ne te propose jamais de « tester » une douleur.
-- **Face à un drapeau rouge** : il donne le message ci-dessus mot pour mot, en premier, et suit `conversations/alerte-douleur.md`. En mode `avec-coach`, il ajoute : « Préviens ton coach. »
-- **Mode `avec-coach`** : il explique la reprise prévue par ton coach, t'aide à suivre et à transmettre tes sensations à ton coach et à ton professionnel de santé. Il ne propose pas de séance et n'écrit rien dans Nolio.
-- **Mode `autocoache`** : il propose les étapes de reprise (`conversations/planifier.md`), te montre un récap, et ne crée les séances dans Nolio qu'après ta validation explicite.
+- **Ce n'est pas la philosophie du coach.** L'assistant applique d'abord `athletes/<slug>/philosophie.md`, puis `coach/philosophie/`.
+- **Pendant l'arrivée** (`conversations/arrivee-coach.md`), si les plans observés dans Nolio ressemblent à cette approche, il le dit en une phrase pour aider le coach à formuler sa propre méthode.
+- **En alternative** : quand le coach demande « et si on faisait autrement ? », l'assistant peut s'appuyer sur cette page, en la présentant à part et marquée « hors philosophie du coach », avec ses sources.
+- **Signaux d'alerte** : les signaux listés plus haut peuvent nourrir les seuils de `coach/criteres-alertes.md`, si le coach le valide.
 
 ## Sources
 

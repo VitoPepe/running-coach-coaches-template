@@ -1,6 +1,6 @@
 # Glossaire
 
-> **À quoi sert ce fichier :** expliquer en mots simples les termes que tu croiseras dans les briefs, les bilans et les pages `philosophie/`.
+> **À quoi sert ce fichier :** expliquer en mots simples les termes du radar, des bilans et des pages `bibliotheque/`. Utile aussi pour les messages aux athlètes.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
 Les termes sont classés par ordre alphabétique. Quand un chiffre est donné, c'est un ordre de grandeur : **tes propres valeurs (zones, seuils, FC) enregistrées dans Nolio passent toujours avant.**
@@ -73,14 +73,14 @@ Ta fréquence cardiaque maximale, en battements par minute. Les formules (comme 
 
 Ta fréquence cardiaque au réveil, allongé, avant de te lever. Une FC repos plus haute que d'habitude plusieurs jours de suite peut signaler de la fatigue, un début de maladie, du stress, la chaleur ou une soirée arrosée.
 
-### Feu vert / orange / rouge
+### Feu vert / orange / rouge (🟢 🟠 🔴)
 
-Le résumé de ta forme du jour dans le brief du matin. Il compare tes signaux récents à **ta propre norme** (voir « VFC » et « FC repos ») :
-- 🟢 tes signaux sont dans ta norme : la séance prévue peut se faire ;
-- 🟠 un signal sort de ta norme (VFC des 7 derniers jours sous ta plage habituelle, ou FC repos plus de 3 battements au-dessus de ta moyenne) : on allège ou on adapte ;
-- 🔴 les deux signaux dérivent ensemble, ou la VFC de la nuit est très basse : repos ou très facile.
+Les niveaux d'alerte du radar et de la revue du soir :
+- 🔴 à traiter aujourd'hui (douleur, séance arrêtée, RPE très au-dessus du prévu, malaise) ;
+- 🟠 à surveiller (séance manquée, fatigue déclarée, intensité non respectée) ;
+- 🟢 à valoriser (séance clé réussie, record).
 
-C'est un appui, pas une consigne : en mode `avec-coach`, le plan reste celui de ton coach. Les règles exactes sont dans `automations/brief-matin.md`.
+Les seuils sont ceux du coach, dans `coach/criteres-alertes.md`, et peuvent être ajustés athlète par athlète dans son profil.
 
 ### Foncier
 

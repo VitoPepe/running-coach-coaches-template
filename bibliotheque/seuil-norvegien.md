@@ -3,6 +3,8 @@
 > **À quoi sert ce fichier :** décrire l'approche centrée sur le travail au seuil, inspirée du modèle norvégien, et la version simplifiée que le coach utilise pour un coureur amateur.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
+> 📎 Page de référence reprise du projet `running-coach-athletes`, écrite pour un coureur : ici, elle sert au coach et à l'assistant comme bibliothèque, jamais à la place de la philosophie du coach.
+
 ## En une phrase
 
 Beaucoup de travail juste sous ton 2e seuil, découpé en fractions et contrôlé pour ne jamais déborder, sur un fond de footings très faciles ; pour un amateur, cela devient 1 à 2 séances de seuil par semaine, pilotées au cardio et au ressenti.
@@ -59,14 +61,12 @@ Toutes les 2 à 3 semaines, la séance du jeudi peut être remplacée par une s�
 - Une douleur tendineuse apparaît (tendon d'Achille, genou) : le seuil répété est aussi une charge mécanique.
 - Ton allure au seuil ne bouge plus sur 6 à 8 semaines.
 
-## Comment le coach l'applique
+## Comment l'assistant s'en sert ici
 
-- **Ce qu'il lit dans Nolio** : tes zones (FC et allure), puis pour chaque séance de seuil la FC et l'allure de chaque fraction, ton RPE et tes commentaires.
-- **Ce qu'il calcule** : l'écart entre la FC des fractions et ta cible, la dérive entre la première et la dernière fraction, le temps total au seuil de la semaine.
-- **Comment il ajuste** : si la FC dépasse la cible en fin de fraction ou si le RPE dépasse 7, il propose de ralentir ou de raccourcir la prochaine séance. S'il progresse, il ajoute une fraction ou une minute, jamais les deux à la fois.
-- **Pas de double séance** sauf si ton profil le justifie (volume, ancienneté) et après une décision notée dans `decisions/`.
-- **Mode `avec-coach`** : il explique la séance de seuil prévue par ton coach, te rappelle la cible et la débriefe. Il ne propose pas de séance et n'écrit rien dans Nolio ; si quelque chose cloche, il te suggère une question à poser à ton coach.
-- **Mode `autocoache`** : il propose la semaine (`conversations/planifier.md`), te montre un récap, et ne crée les séances dans Nolio qu'après ta validation explicite.
+- **Ce n'est pas la philosophie du coach.** L'assistant applique d'abord `athletes/<slug>/philosophie.md`, puis `coach/philosophie/`.
+- **Pendant l'arrivée** (`conversations/arrivee-coach.md`), si les plans observés dans Nolio ressemblent à cette approche, il le dit en une phrase pour aider le coach à formuler sa propre méthode.
+- **En alternative** : quand le coach demande « et si on faisait autrement ? », l'assistant peut s'appuyer sur cette page, en la présentant à part et marquée « hors philosophie du coach », avec ses sources.
+- **Signaux d'alerte** : les signaux listés plus haut peuvent nourrir les seuils de `coach/criteres-alertes.md`, si le coach le valide.
 
 ## Sources
 
