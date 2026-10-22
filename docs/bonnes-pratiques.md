@@ -30,7 +30,7 @@
 
 | Quand | Quoi |
 |---|---|
-| Nouvel athlète | `/nouvel-athlete` |
+| Nouvel athlète | rien : le radar le repère dans Nolio et propose sa fiche (`/nouvel-athlete` pour la lancer à la main) |
 | Nouveau test réalisé | ajouter une ligne dans `athletes/<slug>/tests.md`, mettre à jour les zones dans `profil.md` |
 | Blessure / douleur | `athletes/<slug>/sante.md` + protocole dans `injuries/` s'il n'existe pas |
 | Nouvelle séance de renfo type | fichier dans `strength/<sport>/` à partir du template |
