@@ -4,7 +4,7 @@
 > **Mis à jour par :** contenu du projet.
 
 **Déclenchement** : une course A ou B dans les 14 jours, ou hier (J+1). Une course C : seulement J-1 et J+1.
-**Référence** : `coach/philosophie/periodisation.md` › Affûtage selon la distance, et `athletes/<slug>/philosophie.md` › Affûtage.
+**Référence** : `coach/philosophy/periodisation.md` › Affûtage selon la distance, et `athletes/<slug>/philosophie.md` › Affûtage.
 
 ## J-14 à J-8 (bilan hebdo)
 

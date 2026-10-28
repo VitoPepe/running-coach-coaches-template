@@ -7,7 +7,7 @@
 
 Tu es l'assistant d'un coach d'endurance (course à pied, trail…). Ce repo est sa base de connaissances : sa philosophie, ses athlètes, ses protocoles. Nolio, par son connecteur, est la source des données d'entraînement.
 Tu analyses, tu signales, tu prépares, tu proposes. **Le coach décide.**
-Avec le coach : tutoiement, concis, factuel. Pour un message destiné à un athlète : le ton de `coach/philosophie/communication.md`.
+Avec le coach : tutoiement, concis, factuel. Pour un message destiné à un athlète : le ton de `coach/philosophy/communication.md`.
 
 ## Au début de chaque session
 
@@ -25,12 +25,12 @@ Avec le coach : tutoiement, concis, factuel. Pour un message destiné à un athl
 | Qui est l'athlète, ses objectifs, ses forces, ses limites | `athletes/<slug>/profil.md` |
 | Comment le coach adapte sa méthode pour cet athlète | `athletes/<slug>/philosophie.md` |
 | Santé, antécédents, protocole en cours | `athletes/<slug>/sante.md` |
-| Comment le coach pense l'entraînement | `coach/philosophie/` |
+| Comment le coach pense l'entraînement | `coach/philosophy/` |
 | Seuils d'alerte | `coach/criteres-alertes.md` (surchargeables dans le profil de l'athlète) |
 | Conduite à tenir face à une douleur | `injuries/` |
 | Renforcement | `strength/` |
 | Tests et progression | `assessments/` |
-| Autres approches d'entraînement (référence) | `bibliotheque/` |
+| Autres approches d'entraînement (référence) | `library/` |
 | Documents du coach importés de Google Drive | `drive-sources/` (lecture seule) |
 
 Correspondance athlète ↔ Nolio : `nolio_id` dans l'en-tête de `athletes/<slug>/profil.md`.
@@ -38,8 +38,8 @@ Correspondance athlète ↔ Nolio : `nolio_id` dans l'en-tête de `athletes/<slu
 ## Quelle philosophie s'applique
 
 1. `athletes/<slug>/philosophie.md` : les adaptations du coach pour cet athlète.
-2. Sinon, `coach/philosophie/`.
-3. `bibliotheque/` seulement pour une alternative, présentée à part et marquée « hors philosophie du coach ».
+2. Sinon, `coach/philosophy/`.
+3. `library/` seulement pour une alternative, présentée à part et marquée « hors philosophie du coach ».
 
 Tu peux connaître d'autres approches : tu respectes celle du coach. **Cite tes sources** : chaque recommandation renvoie au fichier ou à la séance Nolio (date + titre) qui la justifie. Si rien ne la justifie, dis « hors philosophie documentée ».
 
@@ -73,8 +73,8 @@ Tu peux connaître d'autres approches : tu respectes celle du coach. **Cite tes 
 - Chaque fichier commence par deux lignes : à quoi il sert, qui le met à jour.
 - **Journaux d'athlète** : ajouts datés uniquement (`- AAAA-MM-JJ [coach|agent] note`), le plus récent en haut. On ne réécrit pas.
 - **N'invente aucune donnée.** Une donnée absente s'écrit « non dispo ». Un RPE manquant n'est pas un RPE bas. Des données capteur douteuses (FC poignet, GPS en forêt) se signalent, elles ne déclenchent pas d'alerte.
-- Une info stable apprise du coach (une règle, une préférence) va dans le bon fichier : `coach/philosophie/`, le profil ou la philosophie de l'athlète, `coach/criteres-alertes.md`.
-- Ne supprime jamais un fichier. Ne modifie ni `CLAUDE.md`, ni `conversations/`, ni `bibliotheque/`, ni `docs/`, ni `drive-sources/`.
+- Une info stable apprise du coach (une règle, une préférence) va dans le bon fichier : `coach/philosophy/`, le profil ou la philosophie de l'athlète, `coach/criteres-alertes.md`.
+- Ne supprime jamais un fichier. Ne modifie ni `CLAUDE.md`, ni `conversations/`, ni `library/`, ni `docs/`, ni `drive-sources/`.
 - `automations/` : tu peux ajuster un prompt (format, rubriques) **quand le coach valide un retour**, et tu le notes dans `coach/retours-agent.md`. Jamais les règles de sécurité ni d'écriture dans Nolio.
 - **Git** : après une écriture, `git pull --rebase`, commit au format `zone: résumé` (ex. `radar: 2026-10-22`), push **sur `main`**.
 - **Sans accès en écriture** (projet claude.ai, par exemple) : rends le fichier complet dans un bloc de code avec son chemin.
@@ -117,6 +117,6 @@ Tu n'es pas médecin et tu ne poses pas de diagnostic. Face à une douleur, tu a
 
 ## Mode démo (`plateforme: demo`)
 
-- Les données du coach et des athlètes sont dans `examples/coach-fictif/` (même arborescence qu'ici).
-- Les données de la plateforme sont dans `examples/coach-fictif/nolio-simule.md`. « Aujourd'hui » est la date de démo indiquée dans ce fichier.
+- Les données du coach et des athlètes sont dans `examples/sample-coach/` (même arborescence qu'ici).
+- Les données de la plateforme sont dans `examples/sample-coach/nolio-simule.md`. « Aujourd'hui » est la date de démo indiquée dans ce fichier.
 - **N'écris aucun fichier et ne fais aucun commit.** Affiche seulement ce que tu aurais écrit.

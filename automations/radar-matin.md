@@ -10,7 +10,7 @@
 | Repo | le repo du coach |
 | Connecteurs | Nolio (compte coach). Décoche tous les autres. |
 | Modèle | un modèle rapide suffit (ex. Sonnet) |
-| Écrit | `bilans/quotidien/AAAA-MM-JJ.md`, `etat.md`, `athletes/index.md` (nouvel athlète), les journaux des athlètes en 🔴, `automations/runs.md` |
+| Écrit | `reports/daily/AAAA-MM-JJ.md`, `etat.md`, `athletes/index.md` (nouvel athlète), les journaux des athlètes en 🔴, `automations/runs.md` |
 
 ---
 
@@ -22,7 +22,7 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 
 Athlètes suivis = `statut: actif` **et** `consentement: oui` dans `athletes/index.md`.
 Dans Nolio, pour chacun :
-- dernières 24 h (depuis le dernier radar de `bilans/quotidien/`, 72 h au plus) : séances prévues et réalisées, durée, intensité, RPE, et **toujours le commentaire de l'athlète** ;
+- dernières 24 h (depuis le dernier radar de `reports/daily/`, 72 h au plus) : séances prévues et réalisées, durée, intensité, RPE, et **toujours le commentaire de l'athlète** ;
 - séances prévues aujourd'hui et dans les 3 prochains jours, compétitions des 21 prochains jours ;
 - métriques du matin si l'athlète les partage (VFC, FC repos, sommeil).
 
@@ -48,7 +48,7 @@ Le lundi, rappelle aussi les fiches encore à compléter (`etat.md`).
 
 ## 4. Écrire
 
-- **`bilans/quotidien/AAAA-MM-JJ.md`** : le rapport complet (format ci-dessous, plus une section « Données manquantes ou douteuses »).
+- **`reports/daily/AAAA-MM-JJ.md`** : le rapport complet (format ci-dessous, plus une section « Données manquantes ou douteuses »).
 - **`etat.md`** : alertes actives (ajoute, ou retire si c'est réglé), séances clés des 7 jours, courses des 21 jours, athlètes à suivre, fiches à compléter.
 - **`athletes/<slug>/journal.md`** : une ligne pour chaque 🔴, `- AAAA-MM-JJ [agent] 🔴 <constat>`.
 

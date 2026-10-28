@@ -15,13 +15,13 @@ Un assistant qui connaît chaque athlète comme son coach le connaît : son enje
 
 ## Structure (≈ 10 min de lecture)
 
-1. **L'accroche** : le même matin vu par le radar express et par le radar complet (`examples/coach-fictif/sorties/`). Léo : 🟠 pour l'un, 🔴 pour l'autre. La différence, c'est la mémoire.
+1. **L'accroche** : le même matin vu par le radar express et par le radar complet (`examples/sample-coach/outputs/`). Léo : 🟠 pour l'un, 🔴 pour l'autre. La différence, c'est la mémoire.
 2. **L'idée** : un repo-mémoire (coach, athlètes, protocoles) + Nolio (les données) + Claude (l'exécution). Schéma 1 de `docs/architecture.md`.
 3. **L'arrivée**, le cœur du projet (schéma 2) :
    - les athlètes découverts dans Nolio ;
    - la philosophie observée dans les plans, puis confirmée ;
    - une fiche par athlète, avec la philosophie adaptée.
-   Extrait de `examples/coach-fictif/sorties/arrivee-extrait.md`.
+   Extrait de `examples/sample-coach/outputs/arrivee-extrait.md`.
 4. **Les 6 niveaux** (`AUTOMATISATION.md`), du radar express à l'écriture dans Nolio.
 5. **Les garde-fous** :
    - consentement des athlètes ;
@@ -45,7 +45,7 @@ Un assistant qui connaît chaque athlète comme son coach le connaît : son enje
 
 - Le radar complet sur téléphone, à côté du radar express.
 - Les schémas « arrivée », « une journée », « quelle philosophie s'applique », « le plan reste celui du coach ».
-- Un extrait de fiche athlète (`examples/coach-fictif/athletes/`).
+- Un extrait de fiche athlète (`examples/sample-coach/athletes/`).
 
 ## Chiffres à mesurer avant de publier
 

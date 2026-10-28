@@ -93,23 +93,23 @@ flowchart LR
 flowchart TD
     Q["Une décision sur un athlète"] --> A1{"athletes/slug/philosophie.md<br/>en parle ?"}
     A1 -->|"oui"| U1["On applique l'adaptation du coach pour cet athlète"]
-    A1 -->|"non"| U2["On applique coach/philosophie/"]
-    U2 -.->|"si le coach demande une alternative"| B["bibliotheque/<br/>présentée à part, « hors philosophie du coach »"]
+    A1 -->|"non"| U2["On applique coach/philosophy/"]
+    U2 -.->|"si le coach demande une alternative"| B["library/<br/>présentée à part, « hors philosophie du coach »"]
 ```
 
 ## 6. La mémoire : qui lit quoi
 
 ```mermaid
 flowchart TB
-    RA["📡 radar-matin"] -->|"écrit"| Q["bilans/quotidien/AAAA-MM-JJ.md"]
+    RA["📡 radar-matin"] -->|"écrit"| Q["reports/daily/AAAA-MM-JJ.md"]
     RA -->|"réécrit"| ET["etat.md<br/>mémoire courte du groupe"]
     RV["🌙 revue-soir"] -->|"ajoute"| J["athletes/slug/journal.md"]
     RV -->|"met à jour"| ET
     ET -->|"lu chaque matin"| RA
     Q -->|"les 7 radars"| BH["📊 bilan-hebdo"]
-    BH -->|"écrit"| H["bilans/hebdo/AAAA-Sww.md"]
+    BH -->|"écrit"| H["reports/weekly/AAAA-Sww.md"]
     H -->|"4 ou 5 bilans"| BM["🗓️ bilan-mensuel"]
-    BM -->|"écrit"| M["bilans/mensuel/AAAA-MM.md"]
+    BM -->|"écrit"| M["reports/monthly/AAAA-MM.md"]
 ```
 
 ## 7. Le plan reste celui du coach (niveau 5)

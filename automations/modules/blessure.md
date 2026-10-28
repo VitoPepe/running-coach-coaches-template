@@ -20,7 +20,7 @@ Symptôme cardio, douleur qui fait boiter, gonflement, douleur osseuse précise,
 - Appeler l'athlète, avec 3 questions prêtes : où exactement, depuis quand, de 0 à 10 pendant et le lendemain matin.
 - L'adaptation immédiate prévue par le protocole (ce qu'on arrête, ce qu'on maintient).
 - L'orientation vers un professionnel si un critère du protocole ou un drapeau rouge le demande.
-- Sans protocole pour cette pathologie : proposer d'en créer un à partir de `injuries/_template-protocole.md`, avec la page de référence `bibliotheque/retour-de-blessure.md`, validé par un kiné ou un médecin.
+- Sans protocole pour cette pathologie : proposer d'en créer un à partir de `injuries/_template-protocole.md`, avec la page de référence `library/retour-de-blessure.md`, validé par un kiné ou un médecin.
 
 ## 4. Suivre
 

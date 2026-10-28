@@ -11,7 +11,7 @@ Structure d'un fichier de test :
 - Objectif / ce qu'il mesure
 - Prérequis (forme, échauffement, terrain, matériel)
 - Protocole pas à pas
-- Calcul des repères et des zones (lien `coach/philosophie/intensites-zones.md`)
+- Calcul des repères et des zones (lien `coach/philosophy/intensites-zones.md`)
 - Fréquence recommandée
 - Limites / pièges d'interprétation
 

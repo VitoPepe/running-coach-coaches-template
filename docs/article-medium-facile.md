@@ -16,7 +16,7 @@
 ## Structure (≈ 4 min de lecture)
 
 1. **L'accroche** : le dimanche soir, 20 athlètes, 120 séances à parcourir. Le lundi matin, une douleur ratée dans un commentaire.
-2. **Le résultat d'abord** : capture du radar express (exemple fictif, `examples/coach-fictif/sorties/radar-express.md`). 🔴 à traiter, 🟠 à surveiller, ⭐ séances clés, 🏁 courses.
+2. **Le résultat d'abord** : capture du radar express (exemple fictif, `examples/sample-coach/outputs/radar-express.md`). 🔴 à traiter, 🟠 à surveiller, ⭐ séances clés, 🏁 courses.
 3. **Les 3 étapes** :
    - brancher Nolio dans Claude (Réglages → Connecteurs) ;
    - créer une tâche planifiée à 7 h ;

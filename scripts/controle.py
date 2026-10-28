@@ -63,7 +63,7 @@ def broken_paths():
     pattern = re.compile(r"`([\w./-]+\.(?:md|py|yml))`|\]\(([\w./-]+\.(?:md|py|yml))(?:#[^)]*)?\)")
     for md in ROOT.rglob("*.md"):
         rel = md.relative_to(ROOT)
-        if rel.parts[0] in {".git", "bilans", "drive-sources"} or rel.name == "journal.md":
+        if rel.parts[0] in {".git", "reports", "drive-sources"} or rel.name == "journal.md":
             continue
         for a, b in pattern.findall(md.read_text(encoding="utf-8")):
             target = a or b

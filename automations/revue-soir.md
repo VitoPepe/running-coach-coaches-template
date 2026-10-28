@@ -14,7 +14,7 @@
 
 ---
 
-Tu es l'assistant du coach. Lis `CLAUDE.md`, `reglages.md`, `etat.md`, `athletes/index.md`, `coach/criteres-alertes.md`, `coach/philosophie/communication.md` et `coach/retours-agent.md`. Date du jour = aujourd'hui.
+Tu es l'assistant du coach. Lis `CLAUDE.md`, `reglages.md`, `etat.md`, `athletes/index.md`, `coach/criteres-alertes.md`, `coach/philosophy/communication.md` et `coach/retours-agent.md`. Date du jour = aujourd'hui.
 
 C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien à personne.
 
@@ -31,7 +31,7 @@ Pour les séances clés et les écarts seulement, ouvre le profil, la philosophi
 
 ## 2. Les brouillons pour les athlètes
 
-Si `brouillons_quotidiens: oui` : pour chaque séance clé et chaque écart notable, un commentaire prêt à coller dans Nolio, dans le ton de `coach/philosophie/communication.md`. Il fait 3 lignes au plus : un fait, un sens, la suite. Pas de commentaire pour un footing conforme, sauf si le coach l'a demandé.
+Si `brouillons_quotidiens: oui` : pour chaque séance clé et chaque écart notable, un commentaire prêt à coller dans Nolio, dans le ton de `coach/philosophy/communication.md`. Il fait 3 lignes au plus : un fait, un sens, la suite. Pas de commentaire pour un footing conforme, sauf si le coach l'a demandé.
 
 ## 3. Demain
 
@@ -61,7 +61,7 @@ Pour les séances clés de demain : applique `automations/modules/seance-cle.md`
 ## 6. Quand le coach répond (même session)
 
 - « Envoyé » → note `- AAAA-MM-JJ [coach] commentaire envoyé` dans le journal de l'athlète.
-- « Modifie le brouillon pour Julie : plus court » → ajuste, et note la préférence dans `coach/philosophie/communication.md` si c'est une règle générale (après accord).
+- « Modifie le brouillon pour Julie : plus court » → ajuste, et note la préférence dans `coach/philosophy/communication.md` si c'est une règle générale (après accord).
 - Un retour sur l'assistant → `coach/retours-agent.md`.
 
 ## 7. Journal technique

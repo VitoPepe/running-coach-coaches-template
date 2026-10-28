@@ -36,10 +36,10 @@ flowchart LR
 
 1. Crée ton repo depuis le template (étape 1 du niveau 2).
 2. Dans `reglages.md`, remplace `plateforme: nolio` par `plateforme: demo`.
-3. Ouvre une session sur ton repo et dis « Fais le radar du matin ». L'assistant lit `examples/coach-fictif/` et son faux Nolio, sans rien écrire.
+3. Ouvre une session sur ton repo et dis « Fais le radar du matin ». L'assistant lit `examples/sample-coach/` et son faux Nolio, sans rien écrire.
 4. Essaie aussi « Fais la revue du soir du 23 octobre », « Fais la fiche de Sophie », « Prépare un message pour Léo ».
 
-Le scénario est décrit dans `examples/coach-fictif/README.md`. Remets `plateforme: nolio` ensuite.
+Le scénario est décrit dans `examples/sample-coach/README.md`. Remets `plateforme: nolio` ensuite.
 
 ## Niveau 1 — Le radar express (10 min, sans repo)
 
@@ -96,7 +96,7 @@ Termine par un commit et un push sur main.
 
 Pourquoi un talon ? Toute la logique vit dans le repo : pour changer le radar, tu modifies `automations/radar-matin.md` (ou tu le demandes à l'assistant), sans revenir dans les réglages de Claude.
 
-**Tester** : **Exécuter maintenant** sur chaque tâche, puis vérifie que le message arrive, qu'un fichier apparaît dans `bilans/`, et qu'une ligne `ok` est ajoutée à `automations/runs.md`, sur `main`.
+**Tester** : **Exécuter maintenant** sur chaque tâche, puis vérifie que le message arrive, qu'un fichier apparaît dans `reports/`, et qu'une ligne `ok` est ajoutée à `automations/runs.md`, sur `main`.
 
 **Au quotidien** : chaque exécution est une session dans l'onglet Code de l'app Claude. Tu y réponds : « Fais la fiche de Paul », « Raccourcis le brouillon pour Julie », « Analyse la séance de Marc ».
 

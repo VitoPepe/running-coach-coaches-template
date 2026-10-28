@@ -7,7 +7,7 @@
 
 ---
 
-1. Lis `coach/philosophie/communication.md` : c'est la règle de ton, de longueur et de contenu.
+1. Lis `coach/philosophy/communication.md` : c'est la règle de ton, de longueur et de contenu.
 2. Lis le profil de l'athlète (« Préférences de communication », points de vigilance) et les 5 dernières lignes de son journal.
 3. Récupère dans Nolio les faits utiles (séances, commentaires) sur la période concernée.
 4. Écris le brouillon :

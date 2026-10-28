@@ -10,7 +10,7 @@ Chaque tâche finit par une question pour s'améliorer. Réponds-y, ou dis à to
 - « Chez moi, une alerte RPE, c'est dès +2. »
 - « Mes messages sont plus courts que ça, 3 lignes max. »
 
-L'assistant note le retour dans `coach/retours-agent.md`, propose l'ajustement, et l'applique quand tu valides. Une règle d'entraînement va dans `coach/philosophie/`, un seuil dans `coach/criteres-alertes.md`, une règle de ton dans `coach/philosophie/communication.md`.
+L'assistant note le retour dans `coach/retours-agent.md`, propose l'ajustement, et l'applique quand tu valides. Une règle d'entraînement va dans `coach/philosophy/`, un seuil dans `coach/criteres-alertes.md`, une règle de ton dans `coach/philosophy/communication.md`.
 
 ## Les réglages courants
 
@@ -44,4 +44,4 @@ Récap de courses, programmes de renfo, suivis : `drive-sources/README.md`. Les 
 
 ## Récupérer les améliorations du projet
 
-Un repo créé depuis un template ne se met pas à jour tout seul. Recopie les fichiers qui t'intéressent (`automations/`, `conversations/`, `docs/`, `CLAUDE.md`) depuis le projet d'origine. Compare avant d'écraser si tu les avais modifiés. Ne touche pas à tes données : `coach/`, `athletes/`, `bilans/`, `etat.md`, `reglages.md`.
+Un repo créé depuis un template ne se met pas à jour tout seul. Recopie les fichiers qui t'intéressent (`automations/`, `conversations/`, `docs/`, `CLAUDE.md`) depuis le projet d'origine. Compare avant d'écraser si tu les avais modifiés. Ne touche pas à tes données : `coach/`, `athletes/`, `reports/`, `etat.md`, `reglages.md`.

@@ -1,6 +1,6 @@
 # Philosophie pour Prénom Nom
 
-> **À quoi sert ce fichier :** comment le coach adapte sa philosophie générale (`coach/philosophie/`) à cet athlète. Seuls les écarts sont écrits : tout ce qui n'est pas ici suit la philosophie générale.
+> **À quoi sert ce fichier :** comment le coach adapte sa philosophie générale (`coach/philosophy/`) à cet athlète. Seuls les écarts sont écrits : tout ce qui n'est pas ici suit la philosophie générale.
 > **Mis à jour par :** `conversations/fiche-athlete.md`, puis le coach. L'agent ne le modifie qu'après accord du coach.
 
 ## Pourquoi une adaptation

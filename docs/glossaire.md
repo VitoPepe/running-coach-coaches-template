@@ -1,6 +1,6 @@
 # Glossaire
 
-> **À quoi sert ce fichier :** expliquer en mots simples les termes du radar, des bilans et des pages `bibliotheque/`. Utile aussi pour les messages aux athlètes.
+> **À quoi sert ce fichier :** expliquer en mots simples les termes du radar, des bilans et des pages `library/`. Utile aussi pour les messages aux athlètes.
 > **Mis à jour par :** personne (contenu du projet). Propose une amélioration par une pull request.
 
 Les termes sont classés par ordre alphabétique. Quand un chiffre est donné, c'est un ordre de grandeur : **tes propres valeurs (zones, seuils, FC) enregistrées dans Nolio passent toujours avant.**
@@ -159,7 +159,7 @@ Une course continue « confortablement dure », de 20 à 40 min, un peu sous le 
 Les petites variations de temps entre deux battements du cœur, mesurées la nuit ou au réveil par une montre, une bague ou une ceinture. Elle s'exprime souvent en **rMSSD**, en millisecondes. En général, une VFC plus basse que d'habitude signale que le corps récupère moins bien (fatigue, maladie, stress, alcool, chaleur).
 - **Ce qui compte, c'est ta tendance par rapport à ta propre norme**, pas la valeur absolue : elle varie énormément d'une personne à l'autre (âge, génétique, appareil). Se comparer à quelqu'un d'autre n'a pas de sens.
 - Une seule nuit basse n'est pas inquiétante ; plusieurs jours sous ta plage habituelle, si.
-- Le brief du matin compare ta moyenne des **7 derniers jours** à ta **norme sur 60 jours** (ta moyenne, plus ou moins un écart-type, c'est-à-dire ta marge de variation habituelle). Une nuit sous ta moyenne moins deux écarts-types compte comme un signal fort. Tant que tu as moins de 60 jours d'historique, le coach utilise la référence notée dans `profil/sante.md`.
+- Le brief du matin compare ta moyenne des **7 derniers jours** à ta **norme sur 60 jours** (ta moyenne, plus ou moins un écart-type, c'est-à-dire ta marge de variation habituelle). Une nuit sous ta moyenne moins deux écarts-types compte comme un signal fort. Tant que tu as moins de 60 jours d'historique, le coach utilise la référence notée dans `profile/sante.md`.
 
 ### VMA (vitesse maximale aérobie)
 

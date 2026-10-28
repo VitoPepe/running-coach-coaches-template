@@ -32,7 +32,7 @@ Le premier modèle utilisait un serveur MCP communautaire, en lecture seule, qui
 
 ### 🧭 Une philosophie à deux étages
 
-Le coach a une philosophie générale (`coach/philosophie/`), mais il ne l'applique pas pareil à tout le monde. Chaque athlète a un `philosophie.md` qui ne contient **que les écarts** (« footings plafonnés en FC, pas en allure »).
+Le coach a une philosophie générale (`coach/philosophy/`), mais il ne l'applique pas pareil à tout le monde. Chaque athlète a un `philosophie.md` qui ne contient **que les écarts** (« footings plafonnés en FC, pas en allure »).
 **Pourquoi :** c'est comme ça que les coachs pensent réellement. Écrire seulement les écarts garde les fiches courtes et lisibles.
 
 ### ✅ Pas de consentement, pas d'analyse
@@ -52,7 +52,7 @@ Le radar express est un prompt complet à coller dans une tâche planifiée, ave
 
 ### ✅ Jamais de message envoyé à un athlète
 
-L'assistant prépare des brouillons dans le ton du coach (`coach/philosophie/communication.md`), et le coach les envoie lui-même.
+L'assistant prépare des brouillons dans le ton du coach (`coach/philosophy/communication.md`), et le coach les envoie lui-même.
 **Pourquoi :** la relation coach-athlète est le cœur du métier. Un message envoyé en son nom, même juste, abîme la confiance.
 
 ### 🧱 La même règle d'écriture que côté coureur, avec un enjeu de plus

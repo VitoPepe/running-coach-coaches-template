@@ -26,14 +26,14 @@ Prénom, structure (indépendant, club, team), disciplines, formations, depuis q
 
 ## Bloc 2 — Ta philosophie générale (15 min)
 
-Avant de poser les questions, **observe Nolio** sur 8 semaines et 3 ou 4 athlètes actifs, en ne lisant que **les séances prévues, écrites par le coach** : répartition de l'intensité, séances types, cycles de charge. Pas de séances réalisées, de commentaires ni de métriques : le consentement des athlètes n'est demandé qu'au bloc 4. Propose ce que tu vois : « Tes plans ressemblent à du polarisé : 80 % facile, 2 séances dures par semaine, une semaine allégée toutes les 4. C'est ta méthode ? ». Le coach confirme ou corrige. Si une approche de `bibliotheque/` s'en rapproche, dis-le en une phrase.
+Avant de poser les questions, **observe Nolio** sur 8 semaines et 3 ou 4 athlètes actifs, en ne lisant que **les séances prévues, écrites par le coach** : répartition de l'intensité, séances types, cycles de charge. Pas de séances réalisées, de commentaires ni de métriques : le consentement des athlètes n'est demandé qu'au bloc 4. Propose ce que tu vois : « Tes plans ressemblent à du polarisé : 80 % facile, 2 séances dures par semaine, une semaine allégée toutes les 4. C'est ta méthode ? ». Le coach confirme ou corrige. Si une approche de `library/` s'en rapproche, dis-le en une phrase.
 
 Puis, une question à la fois :
 1. **Principes** : tes 3 convictions de fond, ce que tu refuses, tes priorités en cas de conflit (santé, régularité, performance).
 2. **Intensités** : ton modèle de zones (3, 5, 7 zones ; sur la FC, l'allure, la puissance), la répartition cible par phase, ton vocabulaire (« chez toi, un seuil, c'est quoi ? »).
 3. **Périodisation** : tes phases, ta progression de charge, ton cycle charge/récupération, ton affûtage selon la distance.
 4. **Communication** : tutoiement ou vouvoiement, ton, longueur d'un retour de séance, ce que tu mets toujours dans un bilan, ce que tu évites. Demande un exemple de message que tu aimes.
-→ `coach/philosophie/principes.md`, `intensites-zones.md`, `periodisation.md`, `communication.md`.
+→ `coach/philosophy/principes.md`, `intensites-zones.md`, `periodisation.md`, `communication.md`.
 
 ## Bloc 3 — Tes seuils d'alerte (5 min)
 

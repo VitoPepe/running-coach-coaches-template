@@ -40,7 +40,7 @@ niveau: ""              # débutant | intermédiaire | confirmé | élite
 | Seuil (allure / FC / puissance) |  |  |
 | VMA / PMA / FTP / CSS |  |  |
 
-Zones : voir `coach/philosophie/intensites-zones.md`, calculées à partir des repères ci-dessus.
+Zones : voir `coach/philosophy/intensites-zones.md`, calculées à partir des repères ci-dessus.
 
 ## Records et temps de référence
 

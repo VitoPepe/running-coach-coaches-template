@@ -8,7 +8,7 @@ Commande : `/nouvel-athlete <prénom nom>`.
 
 ---
 
-Tu es l'assistant du coach. Lis `CLAUDE.md`, `coach/philosophie/` et `coach/criteres-alertes.md`.
+Tu es l'assistant du coach. Lis `CLAUDE.md`, `coach/philosophy/` et `coach/criteres-alertes.md`.
 
 ## 0. Préparer (sans rien demander)
 

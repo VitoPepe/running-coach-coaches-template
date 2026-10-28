@@ -10,17 +10,17 @@
 | Repo | le repo du coach |
 | Connecteurs | Nolio (compte coach). Décoche tous les autres. |
 | Modèle | un modèle plus capable (ex. Opus) |
-| Écrit | `bilans/hebdo/AAAA-Sww.md`, `athletes/index.md`, `etat.md`, `automations/runs.md` |
+| Écrit | `reports/weekly/AAAA-Sww.md`, `athletes/index.md`, `etat.md`, `automations/runs.md` |
 
 ---
 
-Tu es l'assistant du coach. Lis `CLAUDE.md`, `reglages.md`, `etat.md`, `athletes/index.md`, `coach/philosophie/` et `coach/retours-agent.md`. Semaine = du lundi à aujourd'hui (dimanche), numéro ISO `AAAA-Sww`.
+Tu es l'assistant du coach. Lis `CLAUDE.md`, `reglages.md`, `etat.md`, `athletes/index.md`, `coach/philosophy/` et `coach/retours-agent.md`. Semaine = du lundi à aujourd'hui (dimanche), numéro ISO `AAAA-Sww`.
 
 C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien à personne.
 
 ## 1. Collecte
 
-- **Les radars de la semaine** (`bilans/quotidien/`) : ils résument déjà les alertes. Ne refais pas le travail.
+- **Les radars de la semaine** (`reports/daily/`) : ils résument déjà les alertes. Ne refais pas le travail.
 - **Nolio, par athlète suivi** : prévu et réalisé de la semaine (volume, nombre de séances, répartition de l'intensité, séances clés), commentaires, tendance sur 4 semaines, et **la semaine prochaine déjà planifiée par le coach**.
 - **Dossier de l'athlète** : `profil.md` (objectif, phase) et `philosophie.md`. Ouvre `sante.md` et le journal seulement s'il y a eu une alerte.
 
@@ -29,8 +29,8 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 - **Chiffres** : volume réalisé/prévu, séances, % d'intensité, charge par rapport à la moyenne sur 4 semaines.
 - **Séances clés** : réussies ou ratées, et pourquoi.
 - **Signaux** : santé, fatigue, motivation, tirés des commentaires.
-- **Semaine prochaine** : la semaine planifiée par le coach est-elle cohérente avec la fatigue observée, les disponibilités, les alertes en cours et sa philosophie (`philosophie.md` de l'athlète, puis `coach/philosophie/periodisation.md`) ? Propose des ajustements, chacun justifié par un fichier. **C'est une proposition, pas une modification.**
-- **Brouillon de message hebdo** (si `brouillons_hebdo: oui`), dans le ton de `coach/philosophie/communication.md`.
+- **Semaine prochaine** : la semaine planifiée par le coach est-elle cohérente avec la fatigue observée, les disponibilités, les alertes en cours et sa philosophie (`philosophie.md` de l'athlète, puis `coach/philosophy/periodisation.md`) ? Propose des ajustements, chacun justifié par un fichier. **C'est une proposition, pas une modification.**
+- **Brouillon de message hebdo** (si `brouillons_hebdo: oui`), dans le ton de `coach/philosophy/communication.md`.
 
 ## 3. Synthèse du groupe
 
@@ -42,7 +42,7 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 
 ## 4. Écrire
 
-- `bilans/hebdo/AAAA-Sww.md` : la synthèse du groupe en tête, puis une section par athlète.
+- `reports/weekly/AAAA-Sww.md` : la synthèse du groupe en tête, puis une section par athlète.
 - `athletes/index.md` : phase, prochaine course.
 - `etat.md` : alertes, séances clés et courses à venir.
 - Lance `python3 scripts/controle.py`. Corrige ce qui relève de toi, et signale le reste en une ligne.

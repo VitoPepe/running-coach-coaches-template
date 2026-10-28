@@ -64,7 +64,7 @@ Tu es coureur et tu veux un coach pour toi ? C'est le projet jumeau : [`running-
 >
 > 🔧 Pour m'améliorer : pour Léo, je propose directement le retour en phase 1 du protocole. Tu préfères ça, ou que je m'en tienne à l'appel ?
 
-*Exemple écrit à partir des données de démo de [Hugo, le coach fictif](examples/coach-fictif/README.md). Toutes les données sont inventées.*
+*Exemple écrit à partir des données de démo de [Hugo, le coach fictif](examples/sample-coach/README.md). Toutes les données sont inventées.*
 
 ---
 
@@ -92,7 +92,7 @@ flowchart TD
     MIN -.->|"quand il dit oui"| B5
 ```
 
-Un extrait d'arrivée : [examples/coach-fictif/sorties/arrivee-extrait.md](examples/coach-fictif/sorties/arrivee-extrait.md).
+Un extrait d'arrivée : [examples/sample-coach/outputs/arrivee-extrait.md](examples/sample-coach/outputs/arrivee-extrait.md).
 
 ---
 
@@ -125,7 +125,7 @@ flowchart TB
 
 **Trier d'abord, détailler ensuite.** Le radar fait un passage léger sur tous tes athlètes. Il n'ouvre le dossier complet (profil, philosophie, santé) que pour ceux qui sont en alerte ou qui ont une séance clé. C'est ce qui lui permet de suivre 5 ou 30 athlètes.
 
-**Ta philosophie à deux étages.** Ta méthode générale vit dans `coach/philosophie/`. Ce que tu fais différemment pour un athlète vit dans son `philosophie.md`, et c'est elle qui s'applique en premier.
+**Ta philosophie à deux étages.** Ta méthode générale vit dans `coach/philosophy/`. Ce que tu fais différemment pour un athlète vit dans son `philosophie.md`, et c'est elle qui s'applique en premier.
 
 Tous les schémas : [docs/architecture.md](docs/architecture.md).
 
@@ -181,10 +181,10 @@ Tu veux d'abord voir ? Mets `plateforme: demo` dans `reglages.md`, puis dis « F
 | Tâche | Quand | Rôle | Écrit |
 |---|---|---|---|
 | [Radar express](automations/radar-express.md) | tous les jours, 07:07 | niveau 1 : le tri du matin, sans repo | rien |
-| [Radar du matin](automations/radar-matin.md) | tous les jours, 07:07 | le tri, avec la connaissance de chaque athlète | `bilans/quotidien/`, `etat.md` |
+| [Radar du matin](automations/radar-matin.md) | tous les jours, 07:07 | le tri, avec la connaissance de chaque athlète | `reports/daily/`, `etat.md` |
 | [Revue du soir](automations/revue-soir.md) | tous les jours, 20:37 | analyses des séances clés, brouillons de commentaires | journaux des athlètes, `etat.md` |
-| [Bilan hebdo](automations/bilan-hebdo.md) | dimanche, 19:07 | bilan par athlète, synthèse du groupe, semaine suivante vérifiée | `bilans/hebdo/` |
-| [Bilan mensuel](automations/bilan-mensuel.md) | le 1er, 08:07 | progression, tests à planifier, ménage de la mémoire | `bilans/mensuel/` |
+| [Bilan hebdo](automations/bilan-hebdo.md) | dimanche, 19:07 | bilan par athlète, synthèse du groupe, semaine suivante vérifiée | `reports/weekly/` |
+| [Bilan mensuel](automations/bilan-mensuel.md) | le 1er, 08:07 | progression, tests à planifier, ménage de la mémoire | `reports/monthly/` |
 
 Modules lus seulement quand ils servent : [séance clé](automations/modules/seance-cle.md), [préparation de course](automations/modules/prepa-course.md), [blessure](automations/modules/blessure.md), [reprise](automations/modules/reprise.md), [nouvel athlète](automations/modules/nouvel-athlete.md).
 
@@ -213,14 +213,14 @@ Modules lus seulement quand ils servent : [séance clé](automations/modules/sea
 ├── injuries/              tes protocoles par pathologie
 ├── strength/              tes séances de renforcement
 ├── assessments/           tes tests et indicateurs de progression
-├── bibliotheque/          5 approches d'entraînement sourcées (référence, pas ta philosophie)
+├── library/          5 approches d'entraînement sourcées (référence, pas ta philosophie)
 ├── plan/                  le registre des écritures dans Nolio (niveau 5)
-├── bilans/                quotidien, hebdo, mensuel, progression
+├── reports/                quotidien, hebdo, mensuel, progression
 ├── automations/           les tâches planifiées, leurs modules, le journal technique
 ├── conversations/         arrivée, fiche, analyse, message, planifier, progression
 ├── drive-sources/         tes Google Sheets synchronisés (niveau expert)
 ├── docs/                  Nolio, consentement, personnaliser, architecture, tests, articles…
-├── examples/coach-fictif/ Hugo et ses athlètes (et le mode démo)
+├── examples/sample-coach/ Hugo et ses athlètes (et le mode démo)
 └── scripts/ + .github/    contrôle nocturne, synchro Drive
 ```
 
@@ -303,7 +303,7 @@ La structure est prévue pour d'autres plateformes : tout ce qui est propre à N
 | [docs/architecture.md](docs/architecture.md) | tous les schémas |
 | [docs/checklist-de-test.md](docs/checklist-de-test.md) | vérifier que tout marche |
 | [docs/glossaire.md](docs/glossaire.md) | zones, VFC, RPE, charge, affûtage… |
-| [bibliotheque/](bibliotheque/) | 5 approches d'entraînement, avec leurs sources |
+| [library/](library/) | 5 approches d'entraînement, avec leurs sources |
 | [drive-sources/README.md](drive-sources/README.md) | synchroniser tes Google Sheets (niveau expert) |
 | [docs/journal-de-construction.md](docs/journal-de-construction.md) | les choix et les leçons de la construction |
 

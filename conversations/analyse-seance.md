@@ -18,6 +18,6 @@
 4. Conclus : réussie, partielle ou ratée. Donne les causes probables en séparant les faits des hypothèses, et les conséquences pour les prochains jours.
 5. Propose :
    - une note pour `journal.md` ;
-   - un commentaire prêt à coller dans Nolio, dans le ton de `coach/philosophie/communication.md` ;
+   - un commentaire prêt à coller dans Nolio, dans le ton de `coach/philosophy/communication.md` ;
    - si besoin, un ajustement des prochains jours, en citant le fichier de philosophie qui le justifie.
 6. Écris la note seulement si le coach valide. Le commentaire reste un brouillon : c'est le coach qui le publie.

@@ -8,14 +8,14 @@ Sans la permission de création dans Nolio (`reglages.md`), tu t'arrêtes à l'�
 
 ---
 
-Lis `CLAUDE.md`, le dossier de l'athlète (`profil.md`, `philosophie.md`, `sante.md`, les 10 dernières lignes de `journal.md`) et `coach/philosophie/`.
+Lis `CLAUDE.md`, le dossier de l'athlète (`profil.md`, `philosophie.md`, `sante.md`, les 10 dernières lignes de `journal.md`) et `coach/philosophy/`.
 
 ## A. Proposer
 
 - **Données** (Nolio) : le volume réalisé sur les 4 dernières semaines, et les séances déjà au calendrier sur la période.
 - **Construis** en suivant, dans l'ordre : la philosophie de l'athlète, puis celle du coach (périodisation, répartition, vocabulaire de séance). Respecte les disponibilités et les contraintes du profil. Tiens compte des alertes de `etat.md` et des protocoles de `injuries/` en cours.
 - **Chaque séance** : date, type (dans le vocabulaire du coach), durée, contenu structuré (échauffement, corps, retour au calme), intensité dans les zones de l'athlète, but en une phrase.
-- **Cite** la règle du coach qui justifie chaque choix important (« 3 semaines de charge + 1 allégée : `coach/philosophie/periodisation.md` »).
+- **Cite** la règle du coach qui justifie chaque choix important (« 3 semaines de charge + 1 allégée : `coach/philosophy/periodisation.md` »).
 - Une séance déjà dans Nolio et absente de `plan/registre-nolio.md` : le coach l'a écrite. Tu n'y touches pas, et tu construis autour.
 
 ## B. Le récap et la validation

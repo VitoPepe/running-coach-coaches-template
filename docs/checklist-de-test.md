@@ -5,10 +5,10 @@
 
 ## A. Avec le coach fictif (mode démo)
 
-Préparation : dans `reglages.md`, mets `plateforme: demo`, puis ouvre une session sur ton repo. Le scénario est décrit dans `examples/coach-fictif/README.md`.
+Préparation : dans `reglages.md`, mets `plateforme: demo`, puis ouvre une session sur ton repo. Le scénario est décrit dans `examples/sample-coach/README.md`.
 
 ### Radar du matin
-- [ ] « Fais le radar du matin » : il est daté du samedi 24 octobre (date de démo de `examples/coach-fictif/nolio-simule.md`).
+- [ ] « Fais le radar du matin » : il est daté du samedi 24 octobre (date de démo de `examples/sample-coach/nolio-simule.md`).
 - [ ] Léo est en 🔴 et en tête : une gêne au tibia gauche, zone déjà blessée, donc le niveau monte. L'action renvoie au protocole de périostite.
 - [ ] Julie est en 🟠 (footing trop intense, son point de vigilance connu).
 - [ ] Marc est en ⭐ et 🏁 (dernière séance clé, J-14), avec une vérification de l'affûtage.
@@ -20,7 +20,7 @@ Préparation : dans `reglages.md`, mets `plateforme: demo`, puis ouvre une sessi
 - [ ] Colle le prompt de `automations/radar-express.md` dans une conversation en mode démo : le radar express voit moins de choses (il ne sait pas que le tibia de Léo a déjà été blessé). C'est attendu, et c'est tout l'intérêt du niveau 2.
 
 ### Revue du soir et messages
-- [ ] « Fais la revue du soir du 23 octobre » : les brouillons de commentaires ont le ton de Hugo (`examples/coach-fictif/coach/philosophie/communication.md`), et aucun brouillon pour un footing conforme.
+- [ ] « Fais la revue du soir du 23 octobre » : les brouillons de commentaires ont le ton de Hugo (`examples/sample-coach/coach/philosophy/communication.md`), et aucun brouillon pour un footing conforme.
 - [ ] « Prépare un message pour Léo » : pas de diagnostic, une proposition d'appel, aucune comparaison avec un autre athlète.
 - [ ] Aucun message n'est envoyé, quel que soit le connecteur branché.
 
@@ -47,7 +47,7 @@ Remets `plateforme: nolio` à la fin.
 - [ ] Chaque fiche se termine par « C'est juste ? », et l'écart avec ta philosophie est bien écrit dans `philosophie.md`.
 
 ## D. Niveau 3 (tâches planifiées)
-- [ ] **Exécuter maintenant** sur le radar : message reçu, `bilans/quotidien/` créé, ligne `ok` dans `automations/runs.md`, push sur `main` (pas sur une branche `claude/…`).
+- [ ] **Exécuter maintenant** sur le radar : message reçu, `reports/daily/` créé, ligne `ok` dans `automations/runs.md`, push sur `main` (pas sur une branche `claude/…`).
 - [ ] La revue du soir : brouillons pour les séances clés seulement.
 - [ ] Le bilan du dimanche : une section par athlète, une synthèse du groupe, des ajustements proposés mais **rien de modifié** dans Nolio.
 

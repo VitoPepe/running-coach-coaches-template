@@ -10,9 +10,9 @@
 
 ## Ce que tu suis
 
-- **Après une blessure** : les critères de phase du protocole de `injuries/` en cours. Indique la phase, ce qui valide le passage à la suivante, et ce qui l'empêche. Si aucun protocole ne s'applique : `bibliotheque/retour-de-blessure.md`, en le signalant comme référence générale, hors protocole du coach.
+- **Après une blessure** : les critères de phase du protocole de `injuries/` en cours. Indique la phase, ce qui valide le passage à la suivante, et ce qui l'empêche. Si aucun protocole ne s'applique : `library/retour-de-blessure.md`, en le signalant comme référence générale, hors protocole du coach.
 - **Après une maladie** : pas de reprise avant 24 à 48 h sans fièvre ni symptômes. Une reprise progressive en endurance.
-- **Après une coupure** : la progression prévue par le coach (`coach/philosophie/periodisation.md`).
+- **Après une coupure** : la progression prévue par le coach (`coach/philosophy/periodisation.md`).
 
 ## Les signaux d'arrêt
 

@@ -11,7 +11,7 @@ entraînement. Méthode et indicateurs : `assessments/progress-indicators.md`.
 **Entrées** : un athlète (`athletes/<slug>/`) et des saisons (par défaut : toutes les années
 civiles depuis le début du récap courses).
 
-**Sortie** : `bilans/progression/<slug>-AAAA-MM-JJ.md`. S'il existe déjà un rapport du jour ou
+**Sortie** : `reports/progress/<slug>-AAAA-MM-JJ.md`. S'il existe déjà un rapport du jour ou
 un rapport « partie 1 » récent, on le **complète** au lieu d'en créer un nouveau.
 
 ## Partie 1 — Courses (récap courses)
