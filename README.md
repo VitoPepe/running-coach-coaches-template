@@ -6,23 +6,51 @@
 **Un assistant pour coachs d'endurance (course à pied, trail…), propulsé par Claude et branché sur Nolio.**
 Chaque matin, il te dit quels athlètes ont besoin de toi. Le soir, il analyse leurs séances et prépare tes commentaires. Le dimanche, il fait le bilan de chaque athlète et du groupe. Et il connaît chacun d'eux comme toi, parce qu'il a commencé par t'interviewer.
 
-**Zéro code, zéro installation** : un dossier de fichiers texte sur GitHub (la mémoire), Claude (le cerveau) et des tâches planifiées (le rythme). Et le niveau 1 marche même sans GitHub : un seul texte à coller.
+**Zéro code** : un dossier de fichiers texte sur GitHub (la mémoire), Claude (le cerveau) et des tâches planifiées (le rythme). Et le niveau 1 marche même sans GitHub : un seul texte à coller.
 
 ![Licence MIT](https://img.shields.io/badge/licence-MIT-blue) ![Zéro code](https://img.shields.io/badge/code-z%C3%A9ro-brightgreen) ![Langue](https://img.shields.io/badge/langue-fran%C3%A7ais-informational) ![Claude](https://img.shields.io/badge/Claude-t%C3%A2ches%20planifi%C3%A9es-orange) ![Nolio](https://img.shields.io/badge/Nolio-compte%20coach-purple)
 
 > 🤝 **Le coach décide.** L'assistant lit, signale, prépare et propose. Il n'écrit jamais à tes athlètes, ne pose pas de diagnostic, et ne touche à un plan qu'après ton « je valide ».
 
-Tu es coureur et tu veux un coach pour toi ? C'est le projet jumeau : [`running-coach-athletes`](https://github.com/VitoPepe/running-coach-athletes).
+Tu es coureur et tu veux un coach pour toi ? C'est le projet jumeau : [`running-coach-athletes-template`](https://github.com/VitoPepe/running-coach-athletes-template).
+
+---
+
+## 🚀 Installation : GitHub, puis Claude
+
+**Il te faut** un abonnement Claude Pro ou Max, un compte coach Nolio (payant) et un compte GitHub (gratuit, créé à l'étape 1). Aucune connaissance technique : chaque clic est expliqué dans le **[guide d'installation pas à pas](docs/installation.md)**.
+
+Compte environ 1 h 15. Fais **d'abord GitHub, puis Claude** : Claude a besoin que ton repo existe pour s'y brancher.
+
+### 1️⃣ Sur GitHub : la mémoire (15 min)
+
+GitHub garde en ligne le dossier de fichiers de ton assistant (on dit un « repo ») : ta philosophie, tes athlètes, ses rapports.
+
+1. **Crée ton compte** sur [github.com/signup](https://github.com/signup), avec la double authentification. → [détails](docs/installation.md#étape-1--créer-ton-compte-github-5-min)
+2. **Copie le modèle** : en haut de cette page, bouton vert **Use this template** → **Create a new repository** → coche **Private** (obligatoire : données de santé) → **Create repository**. → [détails](docs/installation.md#étape-2--copier-le-modèle-dans-ton-compte-2-min)
+3. **Allume le contrôle nocturne** : onglet **Actions** de ton repo → active les workflows → **Contrôle de l'assistant** → **Run workflow**. → [détails](docs/installation.md#étape-3--allumer-le-contrôle-nocturne-2-min)
+
+### 2️⃣ Sur Claude : le cerveau (1 h)
+
+Claude lit ton repo et Nolio, te répond, et lance les tâches du matin et du soir. Tout se passe dans l'espace **Code** de Claude ([claude.ai/code](https://claude.ai/code)) : malgré son nom, tu n'y écris aucun code.
+
+4. **Branche Nolio** : Claude → **Réglages → Connecteurs** → Nolio, avec ton **compte coach**, en **lecture** seulement. → [détails](docs/installation.md#étape-4--brancher-nolio-dans-claude-5-min)
+5. **Relie Claude à ton repo** : sur [claude.ai/code](https://claude.ai/code), connecte GitHub, puis installe l'application Claude en cochant **ton repo**. → [détails](docs/installation.md#étape-5--relier-claude-à-ton-repo-github-5-min)
+6. **Lance ton arrivée** : ouvre une session sur ton repo, Nolio actif, et écris **« Lance mon arrivée »**. → [détails](docs/installation.md#étape-6--ta-première-conversation-avec-lassistant-30-min)
+7. **Crée les 4 tâches planifiées** (radar, revue du soir, bilans) avec le prompt talon. → [détails](docs/installation.md#étape-7--les-tâches-automatiques-du-matin-et-du-soir-20-min)
+
+**Pressé ?** Le radar express marche en 10 minutes, **sans GitHub** : branche Nolio (étape 4), crée une tâche planifiée à 07:07 sans repo et colle le prompt de [automations/radar-express.md](automations/radar-express.md).
+**Tu veux d'abord voir ?** Après l'étape 2, mets `plateforme: demo` dans `reglages.md`, puis dis « Fais le radar du matin » : l'assistant tourne sur un coach fictif.
 
 ---
 
 ## Sommaire
 
+- [🚀 Installation : GitHub, puis Claude](#-installation--github-puis-claude) · [le guide pas à pas](docs/installation.md)
 - [Ce que fait ton assistant](#-ce-que-fait-ton-assistant)
 - [L'arrivée : il apprend à te connaître](#-larrivée--il-apprend-à-te-connaître)
 - [Comment ça marche](#-comment-ça-marche)
 - [Les 6 niveaux d'automatisation](#-les-6-niveaux-dautomatisation)
-- [Démarrer](#-démarrer)
 - [Les automatisations et les conversations](#-les-automatisations-et-les-conversations)
 - [Ce qu'il y a dans le repo](#-ce-quil-y-a-dans-le-repo)
 - [Garde-fous](#-garde-fous) · [Tes athlètes et leurs données](#-tes-athlètes-et-leurs-données) · [Coût](#-coût-et-consommation) · [Limites](#-limites)
@@ -153,24 +181,7 @@ flowchart LR
 | **4 · Surveillé** | la GitHub Action (déjà là) | un mail si une tâche ne tourne pas, un assistant qui s'améliore |
 | **5 · L'assistant qui planifie** | la création dans Nolio | des semaines proposées dans ta philosophie, écrites après ton « je valide » |
 
-Le pas-à-pas de chaque niveau : **[AUTOMATISATION.md](AUTOMATISATION.md)**.
-
----
-
-## 🚀 Démarrer
-
-**Il te faut** un abonnement Claude Pro ou Max, un compte coach Nolio (payant), et à partir du niveau 2 un compte GitHub (gratuit).
-
-**En 10 minutes (niveau 1)** : branche Nolio dans Claude (Réglages → Connecteurs), crée une tâche planifiée à 07:07 sans repo, et colle le prompt de [automations/radar-express.md](automations/radar-express.md). Demain matin, tu as ton radar.
-
-**L'assistant complet (niveaux 2 et 3)** :
-1. **Crée ton repo** : **Use this template** → **Create a new repository** → coche **Private**.
-2. **Connecte GitHub à Claude** sur [claude.ai/code](https://claude.ai/code), et donne-lui accès à ton repo.
-3. **Ouvre une session** sur ton repo, avec Nolio actif, et dis **« Lance mon arrivée »**.
-4. **Crée les 4 tâches planifiées** avec le prompt talon : [AUTOMATISATION.md › Niveau 3](AUTOMATISATION.md#niveau-3--le-suivi-au-quotidien-20-min).
-5. **Active le contrôle nocturne** : onglet Actions de ton repo.
-
-Tu veux d'abord voir ? Mets `plateforme: demo` dans `reglages.md`, puis dis « Fais le radar du matin ».
+Le pas-à-pas de chaque niveau : **[AUTOMATISATION.md](AUTOMATISATION.md)**. Pour l'installation de base, suis le [guide pas à pas](docs/installation.md).
 
 ---
 
@@ -219,7 +230,7 @@ Modules lus seulement quand ils servent : [séance clé](automations/modules/sea
 ├── automations/           les tâches planifiées, leurs modules, le journal technique
 ├── conversations/         arrivée, fiche, analyse, message, planifier, progression
 ├── drive-sources/         tes Google Sheets synchronisés (niveau expert)
-├── docs/                  Nolio, consentement, personnaliser, architecture, tests, articles…
+├── docs/                  installation pas à pas, Nolio, consentement, personnaliser, architecture, tests, articles…
 ├── examples/sample-coach/ Hugo et ses athlètes (et le mode démo)
 └── scripts/ + .github/    contrôle nocturne, synchro Drive
 ```
@@ -295,7 +306,8 @@ La structure est prévue pour d'autres plateformes : tout ce qui est propre à N
 
 | Guide | Pour… |
 |---|---|
-| [AUTOMATISATION.md](AUTOMATISATION.md) | installer chaque niveau, pas à pas |
+| [docs/installation.md](docs/installation.md) | **installer l'assistant, clic par clic : GitHub, puis Claude** |
+| [AUTOMATISATION.md](AUTOMATISATION.md) | les 6 niveaux, et comment aller plus loin |
 | [docs/nolio.md](docs/nolio.md) | brancher ton compte coach et choisir les permissions |
 | [docs/consentement-rgpd.md](docs/consentement-rgpd.md) | l'accord de tes athlètes, avec un message type |
 | [docs/personnaliser.md](docs/personnaliser.md) | adapter l'assistant à ta façon de coacher |

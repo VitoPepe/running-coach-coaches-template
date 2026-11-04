@@ -25,6 +25,8 @@ flowchart LR
 
 ---
 
+> 🧭 **Première installation ?** Suis le [guide pas à pas](docs/installation.md) : la partie GitHub, puis la partie Claude, chaque clic expliqué. Ce fichier détaille ensuite chaque niveau.
+
 ## Ce qu'il te faut
 
 - Un compte **Claude** Pro ou Max : les tâches planifiées en ont besoin.
@@ -55,6 +57,8 @@ Le scénario est décrit dans `examples/sample-coach/README.md`. Remets `platefo
 Les seuils sont dans le texte du prompt : change-les avec tes mots. Sa limite, c'est qu'il ne connaît pas tes athlètes. C'est le rôle du niveau 2.
 
 ## Niveau 2 — L'arrivée (30 min, puis 5 à 10 min par athlète)
+
+Le détail de chaque clic : [docs/installation.md](docs/installation.md), étapes 1 à 6.
 
 1. **Crée ton repo** : sur la page GitHub du projet, **Use this template** → **Create a new repository** → coche **Private** (obligatoire : il contiendra des données de santé de tes athlètes).
 2. **Connecte GitHub à Claude** (une fois) : va sur [claude.ai/code](https://claude.ai/code), accepte de connecter GitHub. Quand GitHub demande à quels repos Claude a accès, choisis **All repositories**, ou **Only select repositories** en cochant ton repo.
