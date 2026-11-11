@@ -8,7 +8,7 @@
 
 ---
 
-Lis `CLAUDE.md` et `reglages.md`. Parle au coach sans jargon : « nouveautés du modèle », jamais « diff », « patch » ou « commit ».
+Lis `CLAUDE.md` et `reglages.md`. Le modèle se lit seulement : n'y écris jamais, n'y pousse rien, même si la session en a le droit. Parle au coach sans jargon : « nouveautés du modèle », jamais « diff », « patch » ou « commit ».
 
 ## 1. Ce qui a changé
 
