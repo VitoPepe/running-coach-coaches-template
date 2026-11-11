@@ -175,8 +175,19 @@ Recommence pour les 3 autres tâches, en changeant **le nom du fichier** dans la
 | Claude | [claude.ai/code](https://claude.ai/code) → connecter GitHub → app Claude sur ton repo | oui |
 | Claude | session sur ton repo → « Lance mon arrivée » | puis « On reprend mon arrivée » |
 | Claude | 4 tâches planifiées avec le prompt talon | oui |
+| Claude | ajouter le modèle comme deuxième repo, puis « Mets à jour depuis le modèle » | une fois, puis quand le bilan mensuel le propose |
 
 Pour aller plus loin (le niveau 5 qui écrit dans Nolio, tes Google Sheets) : [AUTOMATISATION.md](../AUTOMATISATION.md).
+
+## Recevoir les mises à jour du modèle
+
+Ton repo est une copie indépendante : GitHub ne lui envoie pas les améliorations faites ensuite dans le modèle. C'est l'assistant qui les ramène, sans toucher à tes athlètes, à tes réglages ni à tes rapports.
+
+1. **Une seule fois** : dans Claude, là où tu as choisi ton repo (les réglages de ton projet ou de ta session, onglet **Code**), ajoute aussi le modèle comme deuxième repo : `VitoPepe/running-coach-coaches-template`. Il est public : rien à installer côté GitHub.
+2. **Quand tu veux** : ouvre une session sur ton repo et dis **Mets à jour depuis le modèle** (ou `/mise-a-jour`). L'assistant te résume les nouveautés, attend ton « oui », les reporte, et garde les ajustements que tu as déjà faits sur ses prompts.
+3. **Tu n'as pas à surveiller** : le bilan du 1er du mois te prévient en une ligne quand le modèle a des nouveautés.
+
+✅ **Ça a marché si** `reglages.md` contient une ligne `version_modele:` remplie, et que l'assistant te dit ce qui a changé pour toi.
 
 ## Quand ça coince
 

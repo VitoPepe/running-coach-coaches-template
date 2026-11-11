@@ -104,7 +104,7 @@ Pourquoi un talon ? Toute la logique vit dans le repo : pour changer le radar, t
 
 **Au quotidien** : chaque exécution est une session dans l'onglet Code de l'app Claude. Tu y réponds : « Fais la fiche de Paul », « Raccourcis le brouillon pour Julie », « Analyse la séance de Marc ».
 
-Tu peux aussi tout lancer à la main dans une session, avec les commandes `/radar`, `/revue`, `/bilan-hebdo`, `/analyse-seance`, `/message`, `/nouvel-athlete`, `/bilan-progression`, `/planifier` et `/arrivee`.
+Tu peux aussi tout lancer à la main dans une session, avec les commandes `/radar`, `/revue`, `/bilan-hebdo`, `/analyse-seance`, `/message`, `/nouvel-athlete`, `/bilan-progression`, `/planifier`, `/arrivee` et `/mise-a-jour` (ramener les nouveautés du modèle, voir `docs/installation.md`).
 
 ## Niveau 4 — Surveillé (2 min)
 

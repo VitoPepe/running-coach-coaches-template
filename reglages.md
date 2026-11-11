@@ -16,6 +16,10 @@
 - plateforme: nolio <!-- nolio | demo (demo = essayer avec le coach fictif, sans compte Nolio) -->
 - permissions_nolio: _à compléter_ <!-- lecture (niveaux 1 à 4) | lecture+creation+suppression (niveau 5). Jamais « modification ». Voir docs/nolio.md -->
 
+## Modèle
+
+- version_modele: _à compléter_ <!-- dernière version du modèle reportée ici ; mise à jour par conversations/mise-a-jour-modele.md -->
+
 ## Lieu et heure
 
 - fuseau: Europe/Paris

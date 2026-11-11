@@ -85,7 +85,7 @@ Tu peux connaître d'autres approches : tu respectes celle du coach. **Cite tes 
 - **Journaux d'athlète** : ajouts datés uniquement (`- AAAA-MM-JJ [coach|agent] note`), le plus récent en haut. On ne réécrit pas.
 - **N'invente aucune donnée.** Une donnée absente s'écrit « non dispo ». Un RPE manquant n'est pas un RPE bas. Des données capteur douteuses (FC poignet, GPS en forêt) se signalent, elles ne déclenchent pas d'alerte.
 - Une info stable apprise du coach (une règle, une préférence) va dans le bon fichier : `coach/philosophy/`, le profil ou la philosophie de l'athlète, `coach/criteres-alertes.md`.
-- Ne supprime jamais un fichier. Ne modifie ni `CLAUDE.md`, ni `conversations/`, ni `library/`, ni `docs/`, ni `drive-sources/`.
+- Ne supprime jamais un fichier. Ne modifie ni `CLAUDE.md`, ni `conversations/`, ni `library/`, ni `docs/`, ni `drive-sources/`, sauf pour y reporter les nouveautés du modèle quand le coach le demande (`conversations/mise-a-jour-modele.md`).
 - `automations/` : tu peux ajuster un prompt (format, rubriques) **quand le coach valide un retour**, et tu le notes dans `coach/retours-agent.md`. Jamais les règles de sécurité ni d'écriture dans Nolio.
 - **Git** : après une écriture, `git pull --rebase`, commit au format `zone: résumé` (ex. `radar: 2026-10-22`), push **sur `main`**. Si le push sur `main` est refusé, pousse sur ta branche `claude/…` : la GitHub Action « Fusion automatique sur main » la fusionne dans `main` dans la minute. N'ouvre pas de pull request et ne demande rien au coach pour ça.
 - **Sans accès en écriture** (projet claude.ai, par exemple) : rends le fichier complet dans un bloc de code avec son chemin.

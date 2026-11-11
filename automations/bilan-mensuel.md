@@ -24,6 +24,7 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 - **Nolio, par athlète suivi** : totaux du mois par rapport au mois précédent, records et compétitions du mois.
 - **Profil de chaque athlète** : objectifs et échéances, tests passés (`tests.md`).
 - **Journal technique** : les lignes du mois dans `automations/runs.md`.
+- **Le modèle** : `git ls-remote https://github.com/VitoPepe/running-coach-coaches-template.git main`. Si le commit diffère de `version_modele` (`reglages.md`), le modèle a des nouveautés. N'applique rien : tu le proposes seulement.
 
 ## 2. Écrire `reports/monthly/AAAA-MM.md`
 
@@ -47,6 +48,7 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 👥 <n> athlètes · <volume> · <évolution>
 🎯 En bonne voie : … · À revoir : …
 🧪 Tests à planifier : …
+🆕 Le modèle a des nouveautés : dis « Mets à jour depuis le modèle » (seulement s'il y en a)
 🔧 Qu'est-ce que tu veux que je change pour le mois prochain ?
 ```
 
@@ -54,6 +56,7 @@ C'est une tâche planifiée : tu n'écris jamais dans Nolio et tu n'envoies rien
 
 - Il valide un changement d'objectif : mets à jour le profil de l'athlète, et ajoute une ligne à son journal.
 - Un retour sur l'assistant : `coach/retours-agent.md`.
+- « Mets à jour depuis le modèle » : suis `conversations/mise-a-jour-modele.md`.
 - Commit et push après chaque écriture.
 
 ## 6. Journal technique

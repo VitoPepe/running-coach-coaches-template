@@ -209,6 +209,7 @@ Modules lus seulement quand ils servent : [séance clé](automations/modules/sea
 | [Message à un athlète](conversations/message-athlete.md) | « Prépare un message pour Léo » | `/message` |
 | [Planifier](conversations/planifier.md) | « Propose la semaine de Julie » | `/planifier` |
 | [Bilan de progression](conversations/bilan-progression.md) | « Est-ce que Sophie progresse ? » | `/bilan-progression` |
+| [Mise à jour depuis le modèle](conversations/mise-a-jour-modele.md) | « Mets à jour depuis le modèle » | `/mise-a-jour` |
 
 ---
 
