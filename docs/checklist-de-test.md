@@ -47,12 +47,13 @@ Remets `plateforme: nolio` à la fin.
 - [ ] Chaque fiche se termine par « C'est juste ? », et l'écart avec ta philosophie est bien écrit dans `philosophie.md`.
 
 ## D. Niveau 3 (tâches planifiées)
-- [ ] **Exécuter maintenant** sur le radar : message reçu, `reports/daily/` créé, ligne `ok` dans `automations/runs.md`, push sur `main` (pas sur une branche `claude/…`).
+- [ ] **Exécuter maintenant** sur le radar : message reçu, `reports/daily/` créé, ligne `ok` dans `automations/runs.md`, le tout sur `main` (si la tâche a poussé sur une branche `claude/…`, l'Action « Fusion automatique sur main » l'a fusionnée et la branche a disparu).
 - [ ] La revue du soir : brouillons pour les séances clés seulement.
 - [ ] Le bilan du dimanche : une section par athlète, une synthèse du groupe, des ajustements proposés mais **rien de modifié** dans Nolio.
 
 ## E. Niveau 4 (contrôle)
 - [ ] Onglet Actions → « Contrôle de l'assistant » → Run workflow : vert.
+- [ ] Onglet Actions → « Fusion automatique sur main » → Run workflow : vert, et plus aucune branche `claude/…` dans la liste des branches.
 - [ ] Mets le radar en pause 2 jours : mail de GitHub « pas de radar depuis… ».
 - [ ] Réponds à une question d'amélioration : ligne dans `coach/retours-agent.md`, ajustement appliqué après ton accord.
 

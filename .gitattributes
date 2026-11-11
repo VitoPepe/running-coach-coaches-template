@@ -1,0 +1,4 @@
+# Fichiers où l'on ne fait qu'ajouter des lignes : en cas de fusion, on garde les lignes des deux côtés
+# (utilisé par la GitHub Action « Fusion automatique sur main »).
+automations/runs.md merge=union
+athletes/*/journal.md merge=union

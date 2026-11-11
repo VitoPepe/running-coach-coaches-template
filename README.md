@@ -232,7 +232,7 @@ Modules lus seulement quand ils servent : [séance clé](automations/modules/sea
 ├── drive-sources/         tes Google Sheets synchronisés (niveau expert)
 ├── docs/                  installation pas à pas, Nolio, consentement, personnaliser, architecture, tests, articles…
 ├── examples/sample-coach/ Hugo et ses athlètes (et le mode démo)
-└── scripts/ + .github/    contrôle nocturne, synchro Drive
+└── scripts/ + .github/    contrôle nocturne, synchro Drive, fusion automatique sur main
 ```
 
 ---

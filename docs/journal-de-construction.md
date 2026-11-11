@@ -9,6 +9,19 @@ Projet jumeau : `running-coach-athletes`, le coach personnel du coureur. Les deu
 
 ---
 
+## 2026-11-11 — Tout finit sur `main`, sans rien faire
+
+### 🧱 Des branches `claude/…` jamais fusionnées
+
+En installant le repo, des branches `claude/…` s'accumulaient sans jamais arriver sur `main` : les sessions et les tâches planifiées de Claude ne peuvent souvent pousser que sur leur propre branche, même quand le prompt dit « push sur main ». Les rapports existaient, mais pas là où le coach et le contrôle nocturne les cherchent.
+
+### 🧭 Un robot de fusion plutôt qu'une consigne de plus
+
+La GitHub Action « Fusion automatique sur main » (`.github/workflows/fusion-auto.yml`) fusionne chaque branche `claude/…` dans `main` dès qu'elle est poussée, puis la supprime, avec un rattrapage toutes les heures. Les fichiers où l'on ne fait qu'ajouter des lignes (`automations/runs.md`, journaux d'athlète) se fusionnent sans conflit grâce à `.gitattributes` (`merge=union`). Un vrai conflit n'est jamais forcé : la branche reste et un ticket explique quoi dire à Claude.
+**Pourquoi :** le coach ne doit pas savoir ce qu'est une branche. Une consigne dans un prompt peut être ignorée ou bloquée ; un robot côté GitHub marche quel que soit le réglage de Claude.
+
+---
+
 ## 2026-10-24 — De la base de connaissances au repo qui se remplit tout seul
 
 ### 🧭 Partir du template existant, pas d'une page blanche

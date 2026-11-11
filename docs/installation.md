@@ -57,7 +57,7 @@ Tu as déjà un compte ? Passe à l'étape 2.
 
 ### Étape 3 · Allumer le contrôle nocturne (2 min)
 
-Ton repo contient un petit robot qui vérifie chaque nuit que l'assistant a bien tourné, et t'envoie un mail sinon. Il faut l'allumer une fois.
+Ton repo contient deux petits robots. Le premier vérifie chaque nuit que l'assistant a bien tourné, et t'envoie un mail sinon. Le second ramène sur `main` tout ce que Claude a écrit sur une branche à part (`claude/…`), pour que tu n'aies jamais rien à fusionner toi-même. Il faut les allumer une fois.
 
 1. Sur la page de ton repo, clique sur l'onglet **Actions** (en haut, à côté de **Code**).
 2. Si GitHub affiche **I understand my workflows, go ahead and enable them** (j'ai compris, active-les), clique dessus.
@@ -136,7 +136,7 @@ C'est ce qui fait tourner l'assistant tout seul. Tu crées 4 tâches planifiées
    - **Connecteurs** : **Nolio seulement**. Décoche les autres (Gmail, Agenda…), ça allège chaque exécution.
    - **Fréquence** : tous les jours, 07:07.
    - **Modèle** : celui du tableau plus bas.
-   - Si tu vois une option pour autoriser l'envoi sur toutes les branches (*Allow unrestricted branch pushes*), coche-la : c'est ce qui permet aux rapports d'arriver directement dans ton repo.
+   - Si tu vois une option pour autoriser l'envoi sur toutes les branches (*Allow unrestricted branch pushes*), coche-la : les rapports arrivent alors directement sur `main`. Sinon, pas d'inquiétude : ils partent sur une branche `claude/…` et le robot « Fusion automatique sur main » les ramène sur `main` dans la minute.
 3. Enregistre, puis clique sur **Exécuter maintenant** (*Run now*) pour tester.
 
 ```text
@@ -185,7 +185,8 @@ Pour aller plus loin (le niveau 5 qui écrit dans Nolio, tes Google Sheets) : [A
 | Pas de bouton **Use this template** | tu n'es pas sur la page du modèle, ou pas connecté à GitHub | connecte-toi, puis rouvre le lien de l'étape 2 |
 | Ton repo n'apparaît pas dans Claude | l'application Claude n'a pas accès à ce repo | étape 5, encadré « Ton repo n'apparaît pas ? » |
 | « Je ne vois pas tes athlètes » | Nolio branché avec un compte athlète, ou décoché dans la session ou la tâche | reconnecte Nolio avec ton compte coach (étape 4) et vérifie qu'il est coché |
-| Le radar s'affiche mais rien n'arrive dans `reports/` sur GitHub | les rapports sont partis sur une branche `claude/…` | vérifie la dernière ligne du prompt (« push sur main ») et l'option de l'étape 7 |
+| Le radar s'affiche mais rien n'arrive dans `reports/` sur GitHub | les rapports sont sur une branche `claude/…` et le robot de fusion n'a pas tourné | onglet **Actions** : vérifie que les workflows sont activés (étape 3), puis **Fusion automatique sur main** → **Run workflow** |
+| Ticket « Fusion automatique bloquée » dans l'onglet **Issues** | Claude a modifié les mêmes lignes à deux endroits, le robot ne choisit pas à ta place | ouvre une session Claude et colle la phrase donnée dans le ticket, puis ferme le ticket |
 | Mail « Contrôle de l'assistant » en échec | une tâche n'a pas tourné, ou un lien est cassé | le mail contient le détail ; c'est normal les premiers jours |
 | L'assistant refuse d'écrire dans Nolio | il est en lecture seule, c'est voulu | voir le niveau 5 dans [AUTOMATISATION.md](../AUTOMATISATION.md) |
 
