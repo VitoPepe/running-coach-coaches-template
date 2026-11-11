@@ -1,19 +1,19 @@
 # Fusion automatique : tout ce que Claude pousse sur une branche `claude/…` arrive sur `main`, sans rien faire.
 # Les sessions et les tâches planifiées de Claude ne peuvent parfois pousser que sur une branche `claude/…`.
 # Ce robot la fusionne dans `main` dans la minute, puis supprime la branche. Rien à configurer.
-# En cas de conflit, il laisse la branche en place et ouvre un ticket (onglet Issues) qui explique quoi faire.
+# En cas de conflit, il ne force rien et n'alerte personne : il laisse la branche, et le radar du matin la rattrape
+# (automations/radar-matin.md, étape 8).
 name: Fusion automatique sur main
 
 on:
   push:
     branches: ["claude/**"]
   schedule:
-    - cron: "37 * * * *" # rattrapage toutes les heures, au cas où une fusion aurait été manquée
+    - cron: "37 5 * * *" # rattrapage chaque jour à 05:37 UTC, avant le radar du matin
   workflow_dispatch: # bouton « Run workflow » dans l'onglet Actions
 
 permissions:
   contents: write
-  issues: write
   actions: write
 
 concurrency:
@@ -45,7 +45,6 @@ jobs:
             exit 0
           fi
 
-          echec=0
           sync_drive=0
           for b in $branches; do
             fusionnee=0
@@ -75,17 +74,7 @@ jobs:
               echo "✅ \`$b\` fusionnée dans main" >> "$GITHUB_STEP_SUMMARY"
             else
               echo "⚠️ \`$b\` n'a pas pu être fusionnée (conflit)" >> "$GITHUB_STEP_SUMMARY"
-              titre="Fusion automatique bloquée : $b"
-              deja=$(gh issue list --state open --search "\"$titre\" in:title" --json number --jq 'length' || echo 0)
-              if [ "${deja:-0}" = 0 ]; then
-                echec=1  # un seul mail d'échec : les essais suivants restent verts tant que le ticket est ouvert
-                gh issue create --title "$titre" --body "La branche \`$b\` modifie les mêmes lignes qu'un changement déjà sur \`main\` : le robot ne choisit pas à ta place.
-
-          **Que faire :** ouvre une session Claude sur ton repo et écris :
-          > Fusionne la branche $b dans main et résous le conflit.
-
-          Le robot réessaie toutes les heures. Ferme ce ticket quand c'est réglé." || true
-              fi
+              echo "La branche reste en place : le radar du matin s'en occupera." >> "$GITHUB_STEP_SUMMARY"
             fi
           done
 
@@ -94,4 +83,3 @@ jobs:
             gh workflow run sync-drive.yml --ref main || true
           fi
 
-          exit $echec

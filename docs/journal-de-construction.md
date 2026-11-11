@@ -17,8 +17,8 @@ En installant le repo, des branches `claude/…` s'accumulaient sans jamais arri
 
 ### 🧭 Un robot de fusion plutôt qu'une consigne de plus
 
-La GitHub Action « Fusion automatique sur main » (`.github/workflows/fusion-auto.yml`) fusionne chaque branche `claude/…` dans `main` dès qu'elle est poussée, puis la supprime, avec un rattrapage toutes les heures. Les fichiers où l'on ne fait qu'ajouter des lignes (`automations/runs.md`, journaux d'athlète) se fusionnent sans conflit grâce à `.gitattributes` (`merge=union`). Un vrai conflit n'est jamais forcé : la branche reste et un ticket explique quoi dire à Claude.
-**Pourquoi :** le coach ne doit pas savoir ce qu'est une branche. Une consigne dans un prompt peut être ignorée ou bloquée ; un robot côté GitHub marche quel que soit le réglage de Claude.
+La GitHub Action « Fusion automatique sur main » (`.github/workflows/fusion-auto.yml`) fusionne chaque branche `claude/…` dans `main` dès qu'elle est poussée, puis la supprime, avec un rattrapage chaque matin. Les fichiers où l'on ne fait qu'ajouter des lignes (`automations/runs.md`, journaux d'athlète) se fusionnent sans conflit grâce à `.gitattributes` (`merge=union`). Un vrai conflit n'est jamais forcé, et il ne déclenche ni ticket ni mail : la branche reste, et le radar du matin la fusionne en résolvant le conflit (étape 8 de `automations/radar-matin.md`). Il n'en parle au coach que s'il ne sait pas trancher.
+**Pourquoi :** le coach ne doit pas savoir ce qu'est une branche, ni recevoir d'alarme pour ça. Une consigne seule dans un prompt ne suffit pas, car Claude n'a pas toujours le droit de pousser sur `main` ; un robot côté GitHub marche quel que soit le réglage de Claude, et le radar rattrape ce que le robot n'ose pas trancher.
 
 ---
 

@@ -109,7 +109,7 @@ Tu peux aussi tout lancer à la main dans une session, avec les commandes `/rada
 ## Niveau 4 — Surveillé (2 min)
 
 - **Le contrôle nocturne** : chaque tâche ajoute une ligne à `automations/runs.md`. Chaque nuit, la GitHub Action « Contrôle de l'assistant » lance `scripts/controle.py`. Si une tâche n'a pas tourné, a échoué, ou si un lien du repo est cassé, GitHub t'envoie un mail. Dans l'onglet **Actions** de ton repo, active les workflows si GitHub le demande, puis lance **Run workflow** une première fois.
-- **La fusion automatique** : quand Claude ne peut pas pousser directement sur `main`, il pousse sur une branche `claude/…`. La GitHub Action « Fusion automatique sur main » la fusionne dans `main` dans la minute et supprime la branche (rattrapage toutes les heures). En cas de vrai conflit, elle laisse la branche et ouvre un ticket qui dit quoi faire.
+- **La fusion automatique** : quand Claude ne peut pas pousser directement sur `main`, il pousse sur une branche `claude/…`. La GitHub Action « Fusion automatique sur main » la fusionne dans `main` dans la minute et supprime la branche (rattrapage chaque matin). En cas de vrai conflit, elle n'alerte personne : le radar du matin fusionne la branche lui-même, et ne t'en parle que s'il ne sait pas trancher.
 - **La boucle d'amélioration** : chaque tâche finit par une question. Tes réponses vont dans `coach/retours-agent.md`, et l'assistant ajuste ses prompts quand tu valides.
 
 ## Niveau 5 — L'assistant qui planifie (5 min)
@@ -146,6 +146,6 @@ Après une semaine, regarde ta consommation dans Claude (**Réglages → Utilisa
 | Un athlète manque dans le radar | `statut` ou `consentement` dans `athletes/index.md` | vérifie qu'il est `actif` et `oui` |
 | Trop d'alertes | seuils par défaut trop sensibles pour toi | dis-le à l'assistant, ou modifie `coach/criteres-alertes.md` (ou le profil de l'athlète) |
 | Les rapports n'arrivent pas sur `main` | push sur une branche `claude/…`, et le robot de fusion n'a pas tourné | onglet Actions : workflows activés, puis « Fusion automatique sur main » → Run workflow |
-| Ticket « Fusion automatique bloquée » | conflit entre une branche `claude/…` et `main` | ouvre une session Claude et colle la phrase du ticket |
+| Le radar dit « une sauvegarde n'a pas pu rejoindre main » | conflit qu'il n'a pas su trancher seul | réponds « règle la fusion » dans la session du radar |
 | Mail « Contrôle de l'assistant » en échec | tâche absente, en échec, ou lien cassé | le mail contient le rapport |
 | L'assistant refuse d'écrire dans Nolio | niveau 5 pas activé, ou tâche planifiée | c'est voulu : voir le niveau 5 |

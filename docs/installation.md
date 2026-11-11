@@ -186,7 +186,7 @@ Pour aller plus loin (le niveau 5 qui écrit dans Nolio, tes Google Sheets) : [A
 | Ton repo n'apparaît pas dans Claude | l'application Claude n'a pas accès à ce repo | étape 5, encadré « Ton repo n'apparaît pas ? » |
 | « Je ne vois pas tes athlètes » | Nolio branché avec un compte athlète, ou décoché dans la session ou la tâche | reconnecte Nolio avec ton compte coach (étape 4) et vérifie qu'il est coché |
 | Le radar s'affiche mais rien n'arrive dans `reports/` sur GitHub | les rapports sont sur une branche `claude/…` et le robot de fusion n'a pas tourné | onglet **Actions** : vérifie que les workflows sont activés (étape 3), puis **Fusion automatique sur main** → **Run workflow** |
-| Ticket « Fusion automatique bloquée » dans l'onglet **Issues** | Claude a modifié les mêmes lignes à deux endroits, le robot ne choisit pas à ta place | ouvre une session Claude et colle la phrase donnée dans le ticket, puis ferme le ticket |
+| Le radar dit « une sauvegarde n'a pas pu rejoindre main » | Claude a modifié les mêmes lignes à deux endroits et n'a pas su trancher seul | réponds « règle la fusion » dans la session du radar |
 | Mail « Contrôle de l'assistant » en échec | une tâche n'a pas tourné, ou un lien est cassé | le mail contient le détail ; c'est normal les premiers jours |
 | L'assistant refuse d'écrire dans Nolio | il est en lecture seule, c'est voulu | voir le niveau 5 dans [AUTOMATISATION.md](../AUTOMATISATION.md) |
 

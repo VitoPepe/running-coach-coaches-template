@@ -89,6 +89,8 @@ Une question courte, différente chaque jour : « Cette alerte sur Marc t'a serv
 
 Ajoute à la fin de `automations/runs.md` : `AAAA-MM-JJ HH:MM | radar | ok/partiel/échec | sources en échec ou —`. Puis `git pull --rebase`, commit `radar: AAAA-MM-JJ`, push sur `main`.
 
+**Branches restées à côté** : `git fetch origin`, puis liste les branches `origin/claude/…` qui ne sont pas dans `main` (`git branch -r --no-merged origin/main --list 'origin/claude/*'`), sauf la tienne. Normalement il n'y en a aucune : la GitHub Action « Fusion automatique sur main » les fusionne. S'il en reste une, c'est un conflit : fusionne-la (`git merge origin/claude/…`) et résous-le toi-même. Pour un fichier où l'on ajoute des lignes (rapports, `runs.md`, journaux), garde les lignes des deux côtés ; pour `etat.md`, garde l'information la plus récente. Commit `fusion: <branche>`, push comme d'habitude : une fois le travail dans `main`, l'Action supprime la branche. Si tu ne sais pas trancher, ne force rien et ajoute au message la ligne `🔧 Une sauvegarde n'a pas pu rejoindre main (<branche>) : dis-moi « règle la fusion » quand tu as 2 minutes.` Ne parle jamais de branche au coach si tout s'est bien passé.
+
 ## Plateforme : Nolio
 
 - **Athlètes** : la liste des athlètes du compte coach, pour repérer les nouveaux.
